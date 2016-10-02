@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>Validar Postulante</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.css.map" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.css_1.map" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css.map" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.css.map" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <nav>
+            <div class="navbar-collapse collapse" id="cuadro" role="region">
+                <div class="container">
+                    <div id="section-tabs">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="active" id="inicio">
+                                <a style="color: #ffffff" target="_top" tabindex="0" 
+                                   href="http://localhost:8080/atencionPostulante/validarPostulante.html">
+                                    Validar Postulante
+                                </a>
+                            </li>
+                            <li>
+                                <a style="color: #ffffff" target="_top" tabindex="0"
+                                   href="http://localhost:8080/atencionPostulante/validarDonante.html">
+                                    Validar Donante
+                                </a>
+                            </li>
+                            <li>
+                                <a style="color: #ffffff" target="_top" tabindex="0" 
+                                   href="http://localhost:8080/atencionPostulante/">
+                                    Cerrar Sesion
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="main">
+            <div id="not_right_side">
+                <div id="content-wraper">
+                    <div id="content" role="main">
+                        <h1 class="row text-center">LISTADO DE POSTULANTES</h1>
+                    </div>
+                    
+                    <div class="container" style="margin-top: 30px">
+                        <div class="navbar-collapse collapse" style="margin-top: 20px">
+                            <span>DNI: </span>
+                            <span><input type="text" placeholder="Ingrese DNI"></span>
+                            <span><input type="submit" value="BUSCAR" class="btn btn-primary" style="margin-left: 50px"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="container" style="margin-top: 50px">
+                        <table class="table table-hover">
+                            <tr>
+                                <th scope="col">Código Postulante</th>
+                                <th scope="col">DNI</th>
+                                <th scope="col">Nombres</th>
+                                <th scope="col">Edad</th>
+                                <th scope="col">Sexo</th>
+                                <th scope="col">Grupo Sanguíneo</th>
+                                <th scope="col">Factor RH</th>
+                                <th scope="col">Validacion</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>71454566</td>
+                                <td>Gianella Giacomotti Torres</td>
+                                <td>26</td>
+                                <td>F</td>
+                                <td>B</td>
+                                <td>Positivo</td>
+                                <td>
+                                    <select>
+                                        <option>Apto</option>
+                                        <option>No Apto</option>
+                                    </select>
+                                </td>
+                                <td><input type="submit" value="Validar" class="btn btn-primary"></td>
+                                <td><input type="submit" value="Ver Informacion" class="btn btn-primary"></td>
+                            </tr>
+                            <tr>
+                                <td>156</td>
+                                <td>25649252</td>
+                                <td>Miriam Adriana Yampufe Aquije</td>
+                                <td>39</td>
+                                <td>F</td>
+                                <td>O</td>
+                                <td>Negativo</td>
+                                <td>
+                                    <select>
+                                        <option>Apto</option>
+                                        <option>No Apto</option>
+                                    </select>
+                                </td>
+                                <td><input type="submit" value="Validar" class="btn btn-primary"></td>
+                                <td><input type="submit" value="Ver Informacion" class="btn btn-primary"></td>
+                            </tr>
+                            <tr>
+                                <td>269</td>
+                                <td>08522993</td>
+                                <td>Emmanuel Javier Tinoco Cardenas</td>
+                                <td>41</td>
+                                <td>M</td>
+                                <td>AB</td>
+                                <td>Negativo</td>
+                                <td>
+                                    <select>
+                                        <option>Apto</option>
+                                        <option>No Apto</option>
+                                    </select>
+                                </td>
+                                <td><input type="submit" value="Validar" class="btn btn-primary"></td>
+                                <td><input type="submit" value="Ver Informacion" class="btn btn-primary"></td>
+                            </tr>
+                            <tr>
+                                <td>78599</td>
+                                <td>49686288</td>
+                                <td>Miguel Luis Pancheri Goto</td>
+                                <td>25</td>
+                                <td>M</td>
+                                <td>A</td>
+                                <td>Positivo</td>
+                                <td>
+                                    <select>
+                                        <option>Apto</option>
+                                        <option>No Apto</option>
+                                    </select>
+                                </td>
+                                <td><input type="submit" value="Validar" class="btn btn-primary"></td>
+                                <td><input type="submit" value="Ver Informacion" class="btn btn-primary"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>
