@@ -12,6 +12,18 @@
         <servlet-name>servletRegistrarEntrevista</servlet-name>
         <servlet-class>atencion.servlets.servletRegistrarEntrevista</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>servletEliminarPostulante</servlet-name>
+        <servlet-class>atencion.servlets.servletEliminarPostulante</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>servletModificarPostulante</servlet-name>
+        <servlet-class>atencion.servlets.servletModificarPostulante</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>servletListarPostulante</servlet-name>
+        <servlet-class>atencion.servlets.servletListarPostulante</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>servletLogin</servlet-name>
         <url-pattern>/loginUsuario</url-pattern>
@@ -23,6 +35,18 @@
     <servlet-mapping>
         <servlet-name>servletRegistrarEntrevista</servlet-name>
         <url-pattern>/registrar-entevista</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletEliminarPostulante</servlet-name>
+        <url-pattern>/eliminarPostulante</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletModificarPostulante</servlet-name>
+        <url-pattern>/modificarPostulante</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletListarPostulante</servlet-name>
+        <url-pattern>/listarPostulante</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

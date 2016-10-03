@@ -24,7 +24,7 @@ public class Postulante {
     @Column
     private String lugarNacimiento;
     @Column
-    private Date fechaNacimiento;
+    private String fechaNacimiento;
     @Column
     private int edad;
     @Column
@@ -38,7 +38,7 @@ public class Postulante {
     @Column
     private int celular;
     @Column
-    private Date fechaRegistro;
+    private String fechaRegistro;
     @Column
     private String sexo;
     @Column
@@ -53,12 +53,8 @@ public class Postulante {
     
     public Postulante() {
     }
-    
-    public Postulante(long codPostulante, String nombre, int DNI,
-            String Ocupacion, String lugarNacimiento, Date fechaNacimiento,
-            int edad, String distrito, String domicilio, String centroTrabajo,
-            int telefonoCasa, int celular, Date fechaRegistro, String sexo,
-            String estadoCivil, String GrupoSanguineo, String FactorRh, String tipoDonacion) {
+
+    public Postulante(long codPostulante, String nombre, int DNI, String Ocupacion, String lugarNacimiento, String fechaNacimiento, int edad, String distrito, String domicilio, String centroTrabajo, int telefonoCasa, int celular, String fechaRegistro, String sexo, String estadoCivil, String GrupoSanguineo, String FactorRh, String tipoDonacion) {
         this.codPostulante = codPostulante;
         this.nombre = nombre;
         this.DNI = DNI;
@@ -78,6 +74,8 @@ public class Postulante {
         this.FactorRh = FactorRh;
         this.tipoDonacion = tipoDonacion;
     }
+    
+    
 
     public Postulante(long codPostulante, String nombre, int DNI, int edad, String sexo, String GrupoSanguineo, String FactorRh) {
         this.codPostulante = codPostulante;
@@ -131,13 +129,16 @@ public class Postulante {
         this.lugarNacimiento = lugarNacimiento;
     }
 
-    public Date getFechaNacimiento() {
+    public String getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(Date fechaNacimiento) {
+    public void setFechaNacimiento(String fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
+
+  
+    
 
     public int getEdad() {
         return edad;
@@ -187,13 +188,15 @@ public class Postulante {
         this.celular = celular;
     }
 
-    public Date getFechaRegistro() {
+    public String getFechaRegistro() {
         return fechaRegistro;
     }
 
-    public void setFechaRegistro(Date fechaRegistro) {
+    public void setFechaRegistro(String fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
     }
+
+
 
     public String getSexo() {
         return sexo;
