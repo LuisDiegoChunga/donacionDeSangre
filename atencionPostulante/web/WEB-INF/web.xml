@@ -8,6 +8,10 @@
         <servlet-name>ServletLog</servlet-name>
         <servlet-class>atencion.servlets.ServletLog</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>servletRegistrarEntrevista</servlet-name>
+        <servlet-class>atencion.servlets.servletRegistrarEntrevista</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>servletLogin</servlet-name>
         <url-pattern>/loginUsuario</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>ServletLog</servlet-name>
         <url-pattern>/ServletLog</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletRegistrarEntrevista</servlet-name>
+        <url-pattern>/registrar-entevista</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

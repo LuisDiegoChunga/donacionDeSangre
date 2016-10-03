@@ -67,7 +67,7 @@
                                         <option value="6">5</option>
                                         <option value="7">6</option>
                                         <option value="8">7</option>
-                                        <option value="9">Más de 7</option>
+                                        <option value="9">Mas de 7</option>
                                     </select>
                                 </td>
                             </tr>
