@@ -2,6 +2,26 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/web/datosPersonales.jsp</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/src/java/atencion/clases/Postulante.java</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/src/conf/persistence.xml</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/src/java/atencion/servlets/servletRegistrarEntrevista.java</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/src/java/atencion/servlets/servletModificarPostulante.java</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/web/listadoPostulantes.html</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/src/java/atencion/DAO/ServiceDAO.java</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/src/java/atencion/clases/examenClinico.java</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/web/listadoPostulantes.jsp</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/web/validarDonante.html</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/web/login.jsp</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/src/java/atencion/servlets/servletEliminarPostulante.java</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/src/java/atencion/Conexion/Conexion.java</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/src/java/atencion/servlets/servletLogin.java</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/src/java/atencion/clases/Entrevista.java</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/src/java/atencion/clases/Usuario.java</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/src/java/atencion/servlets/servletListarPostulante.java</file>
+            <file>file:/C:/Users/lenovo/Desktop/ULIMA/INGENIERIA%20DE%20SOFTWARE%20II/TrabajoFinal/donacionDeSangre/atencionPostulante/src/java/atencion/servlets/servletCrearPostulante.java</file>
+        </group>
     </open-files>
 </project-private>

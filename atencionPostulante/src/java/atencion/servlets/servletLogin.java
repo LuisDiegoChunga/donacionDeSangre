@@ -25,7 +25,7 @@ public class servletLogin extends HttpServlet {
         String usuario = request.getParameter("usuario");
         String password = request.getParameter("password");
         
-        String sql = "SELECT * FROM login";
+        String sql = "SELECT * FROM usuarios";
         PreparedStatement pstmt = null;
         Connection con = null;
         ResultSet rs = null;
@@ -58,9 +58,9 @@ public class servletLogin extends HttpServlet {
             e.printStackTrace();
         } finally{
             try {
-                rs.close();
-                pstmt.close();
-                con.close();
+                if (rs != null) rs.close();
+                if (pstmt != null) pstmt.close();
+                if (con != null) con.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }

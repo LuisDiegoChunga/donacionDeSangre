@@ -46,7 +46,7 @@ public class ServiceDAO {
         ResultSet rs = null;
         try {
             ps = conn.prepareStatement(
-                    "SELECT * FROM personal where usuario=? and clave=?");
+                    "SELECT * FROM usuarios where usuario=? and password=?");
 
             ps.setString(1, usuario);
             ps.setString(2, password);
