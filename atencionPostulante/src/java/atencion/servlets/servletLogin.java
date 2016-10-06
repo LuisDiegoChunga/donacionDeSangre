@@ -21,11 +21,13 @@ public class servletLogin extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        System.out.println("In method doPost");
+        
         HttpSession sesion = request.getSession(true);
         String usuario = request.getParameter("usuario");
         String password = request.getParameter("password");
         
-        String sql = "SELECT * FROM usuarios";
+        String sql = "SELECT * FROM usuarios WHERE usuario = ?";
         PreparedStatement pstmt = null;
         Connection con = null;
         ResultSet rs = null;
@@ -33,6 +35,9 @@ public class servletLogin extends HttpServlet {
         try {
             con = Conexion.getConnection();
             pstmt = con.prepareStatement(sql);
+            
+            pstmt.setString(1, usuario);
+            
             rs = pstmt.executeQuery();
             
             while(rs.next()){
@@ -40,12 +45,15 @@ public class servletLogin extends HttpServlet {
                 String user = rs.getString(2);
                 String pass = rs.getString(3);
                 
+                System.out.println("Before comparison");
                 if(usuario.equalsIgnoreCase(user) && password.equalsIgnoreCase(pass)){
+                    System.out.println("Login successful");
                     String pag = "/listadoPostulantes.jsp";
                     RequestDispatcher rd = request.getRequestDispatcher(pag);
                     rd.forward(request, response);
                     return;
                 }else{
+                    System.out.println("Login failed");
                     String pag = "/login.jsp";
                     RequestDispatcher rd = request.getRequestDispatcher(pag);
                     rd.forward(request, response);

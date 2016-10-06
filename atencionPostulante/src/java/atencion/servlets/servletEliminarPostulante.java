@@ -18,7 +18,7 @@ public class servletEliminarPostulante extends HttpServlet {
             throws ServletException, IOException {
         long id=Long.parseLong(request.getParameter("codPostulante"));
         ServiceDAO dao=new ServiceDAO();
-        dao.elimiarPostulante(id);
+        dao.eliminarPostulante(id);
         response.sendRedirect("listarPostulante");
 
     }

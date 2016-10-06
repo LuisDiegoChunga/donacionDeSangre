@@ -103,7 +103,10 @@
                                     <td>O</td>
                                     <td>Negativo</td>
                                     <td><input type="submit" value="Modificar" class="btn btn-primary"></td>
-                                    <td><input type="submit" value="Eliminar" class="btn btn-primary"></td>
+                                    <td>
+                                        <a href="../src/java/atencion/servlets/servletEliminarPostulante.java"></a>
+                                        <input type="submit" value="Eliminar" class="btn btn-primary">                                        
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>269</td>

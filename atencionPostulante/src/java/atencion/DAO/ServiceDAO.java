@@ -138,7 +138,7 @@ public class ServiceDAO {
     }
     
     //Eliminar postulante
-    public void elimiarPostulante(long codPostulante){
+    public void eliminarPostulante(long codPostulante){
         conectar();
         
         Postulante postulante = em.find(Postulante.class, codPostulante);
