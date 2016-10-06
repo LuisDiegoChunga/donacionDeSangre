@@ -159,6 +159,15 @@ public class ServiceDAO {
         return postulantes;
     }
     
+    //Obtener postulante
+    public Postulante obtenerPostulante(int DNI){
+        conectar();
+        
+        Postulante postulante = em.find(Postulante.class, DNI);
+        
+        desconectar();
+        return postulante;
+    }
     
     
 }

@@ -82,57 +82,30 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                                                
+                                <%
+                                    for (Postulante postulante : postulantes){
+                                %>
                                 <tr>
-                                    <td>002</td>
-                                    <td>71454566</td>
-                                    <td>Gianella Giacomotti Torres</td>
-                                    <td>26</td>
-                                    <td>F</td>
-                                    <td>B</td>
-                                    <td>Positivo</td>
-                                    <td><input type="submit" value="Modificar" class="btn btn-primary"></td>
-                                    <td><input type="submit" value="Eliminar" class="btn btn-primary"></td>
-                                </tr>
-                                <tr>
-                                    <td>156</td>
-                                    <td>25649252</td>
-                                    <td>Miriam Adriana Yampufe Aquije</td>
-                                    <td>39</td>
-                                    <td>F</td>
-                                    <td>O</td>
-                                    <td>Negativo</td>
-                                    <td><input type="submit" value="Modificar" class="btn btn-primary"></td>
+                                    <td><%= postulante.getCodPostulante() %></td>
+                                    <td><%= postulante.getDNI() %></td>
+                                    <td><%= postulante.getNombre() %></td>
+                                    <td><%= postulante.getEdad() %></td>
+                                    <td><%= postulante.getSexo() %></td>
+                                    <td><%= postulante.getGrupoSanguineo() %></td>
+                                    <td><%= postulante.getFactorRh() %></td>
                                     <td>
-                                        <a href="../src/java/atencion/servlets/servletEliminarPostulante.java"></a>
-                                        <input type="submit" value="Eliminar" class="btn btn-primary">                                        
+                                        <a href="modificarPostulante?DNI=<%= postulante.getDNI() %>" 
+                                           class="btn btn-primary">Modificar</a>
+                                    </td>
+                                    <td>
+                                        <a href="eliminarPostulante?DNI=<%= postulante.getDNI() %>" 
+                                           class="btn btn-primary">Eliminar</a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>269</td>
-                                    <td>08522993</td>
-                                    <td>Emmanuel Javier Tinoco Cardenas</td>
-                                    <td>41</td>
-                                    <td>M</td>
-                                    <td>AB</td>
-                                    <td>Negativo</td>
-                                    <td><input type="submit" value="Modificar" class="btn btn-primary"></td>
-                                    <td><input type="submit" value="Eliminar" class="btn btn-primary"></td>
-                                </tr>
-                                <tr>
-                                    <td>78599</td>
-                                    <td>49686288</td>
-                                    <td>Miguel Luis Pancheri Goto</td>
-                                    <td>25</td>
-                                    <td>M</td>
-                                    <td>A</td>
-                                    <td>Positivo</td>
-                                    <td><input type="submit" value="Modificar" class="btn btn-primary"></td>
-                                    <td><input type="submit" value="Eliminar" class="btn btn-primary"></td>
-                                </tr>
-                                
+                                <%
+                                    }
+                                %>
                             </tbody>
-
                         </table>
                     </div>
                 </div>

@@ -44,17 +44,17 @@
                             <tr>
                                 <td class="col-md-1"><label>Ocupacion:</label></td>
                                 <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Ocupacion"
-                                                            name="ocupacion"></td>
+                                                            name="Ocupacion"></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Lugar de Nacimiento:</label></td>
                                 <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Lugar de nacimiento"
-                                                            name="lugar_nacimiento"></td>
+                                                            name="lugarNacimiento"></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Fecha de Nacimiento:</label></td>
                                 <td class="col-md-1"><input type="date"
-                                                            name="fecha_nacimiento"></td>
+                                                            name="fechaNacimiento"></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Edad:</label></td>
@@ -74,12 +74,12 @@
                             <tr>
                                 <td class="col-md-1"><label>Centro de Trabajo:</label></td>
                                 <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Centro de Trabajo"
-                                                            name="centro_de_trabajo"></td>
+                                                            name="centroTrabajo"></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Telefono Casa:</label></td>
                                 <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Telefono Casa"
-                                                            name="telefono_casa"></td>
+                                                            name="telefonoCasa"></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Celular:</label></td>
@@ -95,11 +95,11 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-1"><label>Codigo de Postulante:</label></td>
-                                <td><input size="30" type="text" name="codigo_postulante"></td>
+                                <td><input size="30" type="text" name="codPostulante"></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Fecha de Registro:</label></td>
-                                <td><input type="date" name="fecha_registro"></td>
+                                <td><input type="date" name="fechaRegistro"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -130,12 +130,12 @@
                             <tr>
                                 <td class="col-md-1"><label>Grupo Sanguineo:</label></td>
                                 <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Grupo Sanguineo"
-                                                            name="grupo_sanguineo"></td>
+                                                            name="GrupoSanguineo"></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Factor Rh:</label></td>
                                 <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Factor Rh"
-                                                            name="factor_rh"></td>
+                                                            name="FactorRh"></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Tipo de Donacion:</label></td>
@@ -153,11 +153,12 @@
             </div>
 
             <div class="container-fluid" style="margin-top: 50px; margin-bottom: 80px; margin-left: 350px">
+                <input type="hidden" name="modo" value="registrar"/>
                 <div class="col-md-3">
-                    <input type="submit" value="Continuar" class="btn btn-block btn-primary btn-lg" id="butContinuar">
+                    <input type="submit" value="Continuar" class="btn btn-block btn-primary btn-lg" id="butContinuar"/>
                 </div>
                 <div class="col-md-3">
-                    <input type="submit" value="Cancelar" class="btn btn-block btn-primary btn-lg" id="butCancelar">
+                    <a href="listadoPostulantes.jsp" class="btn btn-block btn-primary btn-lg">Cancelar</a>
                 </div>
             </div>
 

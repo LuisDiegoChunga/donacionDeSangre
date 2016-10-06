@@ -17,8 +17,8 @@ public class servletModificarPostulante extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        Postulante postulante = new Postulante(
+        if(request.getParameter("modo").equals("modificar")){
+            Postulante postulante = new Postulante(
                 Long.parseLong(request.getParameter("codPostulante")),
                 request.getParameter("nombre"),
                 Integer.parseInt(request.getParameter("DNI")),
@@ -37,11 +37,10 @@ public class servletModificarPostulante extends HttpServlet {
                 request.getParameter("GrupoSanguineo"),
                 request.getParameter("FactorRH"),
                 request.getParameter("tipoDonacion")) ;
-        new ServiceDAO().modificarPostulante(postulante);
+            
+            new ServiceDAO().modificarPostulante(postulante);
+            
+        }
         response.sendRedirect("listarPostulante");
-   
     }
-
-  
-   
 }

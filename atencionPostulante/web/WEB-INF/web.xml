@@ -24,6 +24,10 @@
         <servlet-name>servletListarPostulante</servlet-name>
         <servlet-class>atencion.servlets.servletListarPostulante</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>servletCrearPostulante</servlet-name>
+        <servlet-class>atencion.servlets.servletCrearPostulante</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>servletLogin</servlet-name>
         <url-pattern>/loginUsuario</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>servletListarPostulante</servlet-name>
         <url-pattern>/listarPostulante</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletCrearPostulante</servlet-name>
+        <url-pattern>/crearPostulante</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
