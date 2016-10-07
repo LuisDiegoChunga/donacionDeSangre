@@ -14,7 +14,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.NoResultException;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 public class ServiceDAO {
 
@@ -83,7 +85,7 @@ public class ServiceDAO {
     
     //Metodo conectar
     private void conectar(){
-        emf = Persistence.createEntityManagerFactory("atencionPostulantesPU");
+        emf = Persistence.createEntityManagerFactory("atencionPostulantePU");
         em = emf.createEntityManager();
     }
     
@@ -153,21 +155,38 @@ public class ServiceDAO {
     public List<Postulante> listarPostulantes(){
         conectar();
         
-        List<Postulante> postulantes = em.createQuery("SELECT p FROM Postulante p").getResultList();
+        List<Postulante> postulantes = em.createNamedQuery("Postulante.listarTodos").getResultList();
         
         desconectar();
         return postulantes;
     }
     
     //Obtener postulante
-    public Postulante obtenerPostulante(int DNI){
+    public Postulante obtenerPostulante(int codPostulante){
         conectar();
         
-        Postulante postulante = em.find(Postulante.class, DNI);
+        Postulante postulante = em.find(Postulante.class, codPostulante);
         
         desconectar();
         return postulante;
     }
     
-    
+    //Obtener usuario
+    public Usuario obtenerUsuario(String user){
+        conectar();
+        
+        Query query = em.createNamedQuery("Usuario.encontrarPorNombre");
+        query.setParameter("user", user);
+        
+        Usuario usu;
+        try {
+            usu = (Usuario)query.getSingleResult();
+        } catch (NoResultException e) {
+            usu = null;
+        }
+        
+        
+        desconectar();
+        return usu;
+    }   
 }

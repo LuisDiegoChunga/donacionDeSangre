@@ -1,4 +1,4 @@
-<%@page import="java.util.List"%>
+<%@page import="java.util.List"%> 
 <%@page import="atencion.clases.Postulante"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -39,9 +39,6 @@
             </div>
         </nav>
 
-        <%
-            List<Postulante> postulantes = (List<Postulante>) request.getAttribute("postulantes");
-        %>
 
         <div id="main">
             <div id="not_right_side">
@@ -64,48 +61,45 @@
                                 <a class="btn btn-primary btn-block" href="datosPersonales.jsp">Crear Postulante</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> 
+
+                    <%
+                        List<Postulante> postulantes = (List<Postulante>) request.getAttribute("postulantes");
+                    %>
+
+
 
                     <div class="container">
-                        <table class="table table-hover table-condensed">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Código Postulante</th>
-                                    <th scope="col">DNI</th>
-                                    <th scope="col">Nombres</th>
-                                    <th scope="col">Edad</th>
-                                    <th scope="col">Sexo</th>
-                                    <th scope="col">Grupo Sanguíneo</th>
-                                    <th scope="col">Factor RH</th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <%
-                                    for (Postulante postulante : postulantes){
-                                %>
-                                <tr>
-                                    <td><%= postulante.getCodPostulante() %></td>
-                                    <td><%= postulante.getDNI() %></td>
-                                    <td><%= postulante.getNombre() %></td>
-                                    <td><%= postulante.getEdad() %></td>
-                                    <td><%= postulante.getSexo() %></td>
-                                    <td><%= postulante.getGrupoSanguineo() %></td>
-                                    <td><%= postulante.getFactorRh() %></td>
-                                    <td>
-                                        <a href="modificarPostulante?DNI=<%= postulante.getDNI() %>" 
-                                           class="btn btn-primary">Modificar</a>
-                                    </td>
-                                    <td>
-                                        <a href="eliminarPostulante?DNI=<%= postulante.getDNI() %>" 
-                                           class="btn btn-primary">Eliminar</a>
-                                    </td>
-                                </tr>
-                                <%
-                                    }
-                                %>
-                            </tbody>
+                        <table class="table table-hover">
+                            
+
+                            <% for (Postulante postulante : postulantes) {
+                            %>
+                            
+                            <tr><td><label>Cod Postulante</label></td>
+                                
+                                <td><label>DNI</label></td>
+                            </tr>
+                        
+                        
+
+                            <tr>
+                                <td><label>Cód Postulante</label><br><%=postulante.getCodPostulante()%></td>
+                                <td><label>DNI</label><%=postulante.getDNI()%></td>
+                                <td><label>Nombres</label><%=postulante.getNombre()%></td>
+                                <td><label>Edad</label><%=postulante.getEdad()%></td>
+                                <td><label>Grupo Sanguineo</label><%=postulante.getGrupoSanguineo()%></td>
+                                <td><label>Factor RH</label><%=postulante.getFactorRh()%></td>
+                                <td>
+                                    <a href="modificarPostulante=codPostulante<%=postulante.getCodPostulante() %> ">Modificar</a>
+                                    <a href="eliminarPostulante?=codPostulante<%=postulante.getCodPostulante()%> ">Eliminar</a>
+                                </td>
+                            </tr>
+                            <%
+                                }
+                            %>
+
+
                         </table>
                     </div>
                 </div>

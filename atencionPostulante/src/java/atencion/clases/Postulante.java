@@ -6,10 +6,15 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
+@NamedQueries({
+    @NamedQuery(name = "Postulante.listarTodos", query = "SELECT p FROM Postulante p")
+})
 @Entity
-@Table(name = "postulante")
+@Table(name = "postulantes")
 public class Postulante {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -77,7 +82,7 @@ public class Postulante {
     
     
 
-    public Postulante(long codPostulante, String nombre, int DNI, int edad, String sexo, String GrupoSanguineo, String FactorRh) {
+    public Postulante(int codPostulante, String nombre, int DNI, int edad, String sexo, String GrupoSanguineo, String FactorRh) {
         this.codPostulante = codPostulante;
         this.nombre = nombre;
         this.DNI = DNI;

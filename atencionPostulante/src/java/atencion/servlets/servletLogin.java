@@ -2,11 +2,15 @@ package atencion.servlets;
 
 
 import atencion.Conexion.Conexion;
+import atencion.DAO.ServiceDAO;
+import atencion.clases.Postulante;
+import atencion.clases.Usuario;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -45,12 +49,21 @@ public class servletLogin extends HttpServlet {
                 String user = rs.getString(2);
                 String pass = rs.getString(3);
                 
+                Usuario usuarioE = new ServiceDAO().obtenerUsuario(user);
+                
                 System.out.println("Before comparison");
                 if(usuario.equalsIgnoreCase(user) && password.equalsIgnoreCase(pass)){
                     System.out.println("Login successful");
-                    String pag = "/listadoPostulantes.jsp";
+                    final String pag = "/listadoPostulantes.jsp";
+                    
+                    List<Postulante> postulantes = new ServiceDAO().listarPostulantes();
+                    
                     RequestDispatcher rd = request.getRequestDispatcher(pag);
+                    
+                    request.setAttribute("postulantes", postulantes);
+                    request.getSession().setAttribute(pag, pag);
                     rd.forward(request, response);
+                    
                     return;
                 }else{
                     System.out.println("Login failed");
@@ -75,30 +88,7 @@ public class servletLogin extends HttpServlet {
         }
         
         
-             
-//        if(usuario!=null ){
-//            response.sendRedirect("http://localhost:8080/atencionPostulante/listadoPostulantes.html");
-//        }else{
-//            response.sendRedirect("http://localhost:8080/atencionPostulante/");
-        
-//        }     
-        
-        
-        /*if(usuario.equalsIgnoreCase("rec") && password.equalsIgnoreCase("123")){
-            response.sendRedirect("http://localhost:8080/atencionPostulante/listadoPostulantes.html");
-        }else if(usuario.equalsIgnoreCase("tec") && password.equalsIgnoreCase("456")){
-            response.sendRedirect("http://localhost:8080/atencionPostulante/listadoPostulantes.html");
-        }else if(usuario.equalsIgnoreCase("med") && password.equalsIgnoreCase("789")){
-            response.sendRedirect("http://localhost:8080/atencionPostulante/validarPostulante.html");
-        }else if(usuario.equalsIgnoreCase("") && password.equalsIgnoreCase("")){
-            response.sendRedirect("http://localhost:8080/atencionPostulante/");
-        }else if(usuario.equalsIgnoreCase("recep") && password.equalsIgnoreCase("")){
-            response.sendRedirect("http://localhost:8080/atencionPostulante/");
-        }else if(usuario.equalsIgnoreCase("") && password.equalsIgnoreCase("recep")){
-            response.sendRedirect("http://localhost:8080/atencionPostulante/");
-        }else{
-            response.sendRedirect("http://localhost:8080/atencionPostulante/");
-        }*/
+
         
         
     }   

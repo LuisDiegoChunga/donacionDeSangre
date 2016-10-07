@@ -58,7 +58,7 @@
                                 </tr>
                                 <tr>
                                     <td class="col-md-1"><label>Fecha de Nacimiento:</label></td>
-                                    <td class="col-md-1"><input type="date"
+                                    <td class="col-md-1"><input type="text"
                                                                 value="<%= postulante.getFechaNacimiento()%>"
                                                                 name="fechaNacimiento"></td>
                                 </tr>
@@ -112,7 +112,7 @@
                                 </tr>
                                 <tr>
                                     <td class="col-md-1"><label>Fecha de Registro:</label></td>
-                                    <td><input type="date" name="fechaRegistro"
+                                    <td><input type="text" name="fechaRegistro"
                                                value="<%= postulante.getFechaRegistro()%>"></td>
                                 </tr>
                             </tbody>
