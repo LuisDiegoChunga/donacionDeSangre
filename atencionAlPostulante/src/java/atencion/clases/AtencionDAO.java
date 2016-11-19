@@ -91,6 +91,16 @@ public class AtencionDAO {
         return entrevistas;
     }
     
+    //Listar Examen Clinico
+    public List<ExamenClinico> listarExamenesClinicos(){
+        conectar();
+        
+        List<ExamenClinico> examenesClinicos = em.createQuery("select ec from ExamenClinico ec").getResultList();
+        
+        desconectar();
+        return examenesClinicos;
+    }
+    
     //Listar Postulantes segun nombre
     public List<Postulante> obtenerPostulantesSegunNombre(String filtroNombre){
         conectar();

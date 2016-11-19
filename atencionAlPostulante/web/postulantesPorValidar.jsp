@@ -55,7 +55,7 @@
             </div>
             
             <div class="col-md-3">
-                <a href="" class="btn btn-primary"
+                <a href="listado-de-examenes-clinicos-postulantes" class="btn btn-primary"
                    style="margin-top: 20px; margin-bottom: 20px">Examenes Clinicos a Postulantes </a>
             </div>
             

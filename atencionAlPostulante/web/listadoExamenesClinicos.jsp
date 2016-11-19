@@ -1,11 +1,11 @@
-<%@page import="atencion.clases.Entrevista"%>
+<%@page import="atencion.clases.ExamenClinico"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Listado de Entrevistas</title>
+        <title>Listado de Examenes Clinicos</title>
         <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
@@ -14,10 +14,10 @@
     </head>
     <body>
         <%
-            List<Entrevista> entrevistas = (List<Entrevista>)request.getAttribute("entrevistas");
+            List<ExamenClinico> examenesClinicos = (List<ExamenClinico>)request.getAttribute("examenesClinicos");
         %>
         <div class="container">
-            <h1 class="text-center">Listado de Entrevistas realizadas a los Postulantes</h1>
+            <h1 class="text-center">Listado de Examenes Clinicos realizadas a los Postulantes</h1>
             
             <div class="col-md-2">
                 <a href="listado-postulantes-a-validar" class="btn btn-primary"
@@ -27,24 +27,24 @@
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th>Codigo de Entrevista</th>
-                        <th>Nombre del Entrevistado</th>
-                        <th>DNI del entrevistado</th>
-                        <th>Fecha de la Entrevista</th>
+                        <th>Codigo de Examen Clinico</th>
+                        <th>Nombre del postulante examinado</th>
+                        <th>DNI del postulante examinado</th>
+                        <th>Fecha del Examen Clinico</th>
                         <th>Visualizar</th>
                     </tr>
                 </thead>
                 <tbody>
                     <%
-                        for (Entrevista entrevista : entrevistas){
+                        for (ExamenClinico examenClinico : examenesClinicos){
                     %>
                     <tr>
-                        <td><%= entrevista.getCodEnt() %></td>
-                        <td><%= entrevista.getNombreEnt() %></td>
-                        <td><%= entrevista.getDniEnt() %></td>
-                        <td><%= entrevista.getFechaEnt() %></td>
+                        <td><%= examenClinico.getCodExaC() %></td>
+                        <td><%= examenClinico.getNombrePost() %></td>
+                        <td><%= examenClinico.getDniPost() %></td>
+                        <td><%= examenClinico.getFechaEC() %></td>
                         <td>
-                            <a href="" class="btn btn-primary">Ver Entrevista</a>
+                            <a href="" class="btn btn-primary">Ver Examen Clinico</a>
                         </td>
                     </tr>
                     <%
