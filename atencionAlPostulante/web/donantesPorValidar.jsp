@@ -72,6 +72,10 @@
                         <td><%= donanteVal.getSexo() %></td>
                         <td><%= donanteVal.getGrupoS() %></td>
                         <td><%= donanteVal.getFactorRh() %></td>
+                        <td>
+                            <a href="obtener-donante-para-validacion?codD=<%= donanteVal.getCodD() %>"
+                               class="btn btn-primary">Realizar Validacion</a>
+                        </td>
                     </tr>
                     <%
                         }

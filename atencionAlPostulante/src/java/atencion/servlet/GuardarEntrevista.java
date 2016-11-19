@@ -119,6 +119,9 @@ public class GuardarEntrevista extends HttpServlet {
             //REGISTRAR ENTREVISTA
             Entrevista entrevista = new Entrevista(
                     0,
+                    request.getParameter("nombreEnt"),
+                    request.getParameter("dniEnt"),
+                    request.getParameter("fechaEnt"),
                     preg1,
                     preg2,
                     preg3,

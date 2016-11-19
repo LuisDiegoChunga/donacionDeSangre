@@ -48,6 +48,17 @@
         <div class="container">
             <h1 class="text-center">Listado de Postulantes a validar</h1>
             
+            <div class="col-md-3">
+                <a href="listado-entrevistas-a-postulantes" class="btn btn-primary"
+                   style="margin-top: 20px; margin-bottom: 20px">Entrevistas a Postulantes</a>
+                
+            </div>
+            
+            <div class="col-md-3">
+                <a href="" class="btn btn-primary"
+                   style="margin-top: 20px; margin-bottom: 20px">Examenes Clinicos a Postulantes </a>
+            </div>
+            
             <table class="table table-hover">
                 <thead>
                     <tr>

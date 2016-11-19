@@ -23,6 +23,21 @@
                             <td><input size="30" type="text" 
                                        id="codEnt" name="codEnt" readonly/></td>
                         </tr>
+                        <tr>
+                            <td><label>Nombre del entrevistado:</label></td>
+                            <td><input size="30" type="text"
+                                       id="nombreEnt" name="nombreEnt" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label>DNI del entrevistado:</label></td>
+                            <td><input size="30" type="text"
+                                       id="dniEnt" name="dniEnt" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Fecha de la entrevista:</label></td>
+                            <td><input size="30" type="text"
+                                       id="fechaEnt" name="fechaEnt" required/></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

@@ -26,12 +26,16 @@ public class GuardarExamenClinico extends HttpServlet {
             
             ExamenClinico examenC = new ExamenClinico(
                     0,
+                    request.getParameter("nombrePost"),
+                    request.getParameter("dniPost"),
+                    request.getParameter("fechaEC"),
                     Integer.parseInt(request.getParameter("pesoKG")),
                     request.getParameter("pa"),
                     Integer.parseInt(request.getParameter("tallaM")),
                     Integer.parseInt(request.getParameter("pulso")),
                     estAV,
-                    request.getParameter("obs"));
+                    request.getParameter("obs"),
+                    request.getParameter("examinador"));
             
             new AtencionDAO().registrarExamenClinico(examenC); 
         }

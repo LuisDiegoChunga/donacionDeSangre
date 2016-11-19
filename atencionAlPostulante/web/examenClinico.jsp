@@ -22,8 +22,31 @@
                             <td class="col-md-4"><input size="20" type="text"
                                        id="codExaC" name="codExaC" readonly/></td>
                         </tr>
+                        <tr>
+                            <td><label>Nombre del postulante a examinar:</label></td>
+                            <td><input size="20" type="text"
+                                       id="nombrePost" name="nombrePost" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label>DNI del postulante:</label></td>
+                            <td><input size="20" type="text"
+                                       id="dniPost" name="dniPost" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Fecha de registro del examen clinico:</label></td>
+                            <td><input size="20" type="text"
+                                       id="fechaEC" name="fechaEC" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Nombre del Examinador:</label></td>
+                            <td><input size="20" type="text"
+                                       id="examinador" name="examinador" required/></td>
+                        </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <div class="col-lg-6">
                 <table class="table table-hover table-bordered">
                     <tbody>
                         <tr>
@@ -36,13 +59,6 @@
                             <td class="col-md-4"><input size="20" type="text"
                                                          id="tallaM" name="tallaM" required/></td>
                         </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="col-lg-6">
-                <table class="table table-hover table-bordered">
-                    <tbody>
                         <tr>
                             <td class="col-md-6"><label>P.A (mmHg) [fraccion]: </label></td>
                             <td class="col-md-6"><input size="20" type="text"

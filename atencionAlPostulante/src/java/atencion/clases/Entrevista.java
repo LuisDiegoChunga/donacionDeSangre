@@ -14,6 +14,12 @@ public class Entrevista {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codEnt;
     @Column
+    private String nombreEnt;
+    @Column
+    private String dniEnt;
+    @Column
+    private String fechaEnt;
+    @Column
     private String preg1;
     @Column
     private String preg2;
@@ -67,8 +73,11 @@ public class Entrevista {
     public Entrevista() {
     }
 
-    public Entrevista(long codEnt, String preg1, String preg2, String preg3, String preg4, String preg5, String preg6, String preg7, String preg8, String preg9, String preg10, String preg11, String preg12, String preg13, String preg14, String preg15, String preg16, String preg17, String preg18, String preg19, String preg20, String preg21, String preg22, String preg23, String preg24, String entrevistador) {
+    public Entrevista(long codEnt, String nombreEnt, String dniEnt, String fechaEnt, String preg1, String preg2, String preg3, String preg4, String preg5, String preg6, String preg7, String preg8, String preg9, String preg10, String preg11, String preg12, String preg13, String preg14, String preg15, String preg16, String preg17, String preg18, String preg19, String preg20, String preg21, String preg22, String preg23, String preg24, String entrevistador) {
         this.codEnt = codEnt;
+        this.nombreEnt = nombreEnt;
+        this.dniEnt = dniEnt;
+        this.fechaEnt = fechaEnt;
         this.preg1 = preg1;
         this.preg2 = preg2;
         this.preg3 = preg3;
@@ -102,6 +111,30 @@ public class Entrevista {
 
     public void setCodEnt(long codEnt) {
         this.codEnt = codEnt;
+    }
+
+    public String getNombreEnt() {
+        return nombreEnt;
+    }
+
+    public void setNombreEnt(String nombreEnt) {
+        this.nombreEnt = nombreEnt;
+    }
+
+    public String getDniEnt() {
+        return dniEnt;
+    }
+
+    public void setDniEnt(String dniEnt) {
+        this.dniEnt = dniEnt;
+    }
+
+    public String getFechaEnt() {
+        return fechaEnt;
+    }
+
+    public void setFechaEnt(String fechaEnt) {
+        this.fechaEnt = fechaEnt;
     }
 
     public String getPreg1() {
@@ -303,5 +336,7 @@ public class Entrevista {
     public void setEntrevistador(String entrevistador) {
         this.entrevistador = entrevistador;
     }
+    
+    
     
 }
