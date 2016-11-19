@@ -1,12 +1,11 @@
-<%@page import="atencion.clases.Entrevista"%>
-<%@page import="atencion.clases.Postulante"%>
+<%@page import="atencion.clases.Donante"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Postulantes a validar</title>
+        <title>Donantes a validar</title>
         <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
@@ -42,11 +41,11 @@
             </div>
         </nav>
         <%
-            List<Postulante> postulantesValidar = (List<Postulante>)request.getAttribute("postulantesValidar");
+            List<Donante> donantesValidar = (List<Donante>)request.getAttribute("donantesValidar");
         %>
         
         <div class="container">
-            <h1 class="text-center">Listado de Postulantes a validar</h1>
+            <h1 class="text-center">Listado de Donantes a validar</h1>
             
             <table class="table table-hover">
                 <thead>
@@ -63,20 +62,16 @@
                 </thead>
                 <tbody>
                     <%
-                        for (Postulante postulanteVal : postulantesValidar){
+                        for (Donante donanteVal : donantesValidar){
                     %>
                     <tr>
-                        <td><%= postulanteVal.getCodP() %></td>
-                        <td><%= postulanteVal.getDni() %></td>
-                        <td><%= postulanteVal.getNombre()%></td>
-                        <td><%= postulanteVal.getEdad() %></td>
-                        <td><%= postulanteVal.getSexo() %></td>
-                        <td><%= postulanteVal.getGrupoS() %></td>
-                        <td><%= postulanteVal.getFactorRh() %></td>
-                        <td>
-                            <a href="obtener-postulante-para-validacion?codP=<%= postulanteVal.getCodP() %>"
-                               class="btn btn-primary">Realizar Validacion</a>
-                        </td>
+                        <td><%= donanteVal.getCodD() %></td>
+                        <td><%= donanteVal.getDni() %></td>
+                        <td><%= donanteVal.getNombre() %></td>
+                        <td><%= donanteVal.getEdad() %></td>
+                        <td><%= donanteVal.getSexo() %></td>
+                        <td><%= donanteVal.getGrupoS() %></td>
+                        <td><%= donanteVal.getFactorRh() %></td>
                     </tr>
                     <%
                         }

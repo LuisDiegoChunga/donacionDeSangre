@@ -26,7 +26,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a style="color: #ffffff" target="_top" tabindex="0" href="">
+                                <a style="color: #ffffff" target="_top" tabindex="0" 
+                                   href="listado-donantes-a-validar">
                                     Validar Donantes
                                 </a>
                             </li>

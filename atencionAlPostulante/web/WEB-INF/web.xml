@@ -44,6 +44,14 @@
         <servlet-name>ObtenerPostulanteValidacion</servlet-name>
         <servlet-class>atencion.servlet.ObtenerPostulanteValidacion</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ListadoDonantesPorValidar</servlet-name>
+        <servlet-class>atencion.servlet.ListadoDonantesPorValidar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ObtenerDonanteValidacion</servlet-name>
+        <servlet-class>atencion.servlet.ObtenerDonanteValidacion</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ListarPostulantes</servlet-name>
         <url-pattern>/listar-postulantes</url-pattern>
@@ -87,6 +95,14 @@
     <servlet-mapping>
         <servlet-name>ObtenerPostulanteValidacion</servlet-name>
         <url-pattern>/obtener-postulante-para-validacion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListadoDonantesPorValidar</servlet-name>
+        <url-pattern>/listado-donantes-a-validar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenerDonanteValidacion</servlet-name>
+        <url-pattern>/obtener-donante-para-validacion</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

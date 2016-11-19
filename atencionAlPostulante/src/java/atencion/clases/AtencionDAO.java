@@ -127,6 +127,16 @@ public class AtencionDAO {
         return postulante;
     }
     
+    //Obtener donante segun su codigo
+    public Donante obtenerDonante(long codD){
+        conectar();
+        
+        Donante donante = em.find(Donante.class, codD);
+        
+        desconectar();
+        return donante;
+    }
+    
     //Obtener entrevista segun su codigo
     public Entrevista obtenerEntrevista(long codEnt){
         conectar();
