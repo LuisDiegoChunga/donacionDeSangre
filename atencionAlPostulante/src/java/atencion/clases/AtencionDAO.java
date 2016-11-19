@@ -35,7 +35,7 @@ public class AtencionDAO {
     public List<PostulanteApto> listarPostulantesAptos(){
         conectar();
         
-        List<PostulanteApto> postulantesAptos = em.createQuery("select p from PostulanteApto p").getResultList();
+        List<PostulanteApto> postulantesAptos = em.createQuery("select pa from PostulanteApto pa").getResultList();
         
         desconectar();
         return postulantesAptos;
@@ -45,7 +45,8 @@ public class AtencionDAO {
     public List<PostulanteNoApto> listarPostulantesNoAptos(){
         conectar();
         
-        List<PostulanteNoApto> postulantesNoAptos = em.createQuery("select p from PostulanteNoApto p").getResultList();
+        List<PostulanteNoApto> postulantesNoAptos =
+                em.createQuery("select pna from PostulanteNoApto pna").getResultList();
         
         desconectar();
         return postulantesNoAptos;
@@ -65,7 +66,7 @@ public class AtencionDAO {
     public List<DonanteApto> listarDonantesAptos(){
         conectar();
         
-        List<DonanteApto> donantesAptos = em.createQuery("select d from DonanteApto d").getResultList();
+        List<DonanteApto> donantesAptos = em.createQuery("select da from DonanteApto da").getResultList();
         
         desconectar();
         return donantesAptos;
@@ -75,7 +76,7 @@ public class AtencionDAO {
     public List<DonanteNoApto> listarDonantesNoAptos(){
         conectar();
         
-        List<DonanteNoApto> donantesNoAptos = em.createQuery("select d from DonanteNoApto d").getResultList();
+        List<DonanteNoApto> donantesNoAptos = em.createQuery("select dna from DonanteNoApto dna").getResultList();
         
         desconectar();
         return donantesNoAptos;
@@ -195,6 +196,39 @@ public class AtencionDAO {
         
         em.getTransaction().begin();
         em.persist(postulanteNoApto);
+        em.getTransaction().commit();
+        
+        desconectar();
+    }
+    
+    //Registrar Donante
+    public void registrarDonante(Donante donante){
+        conectar();
+        
+        em.getTransaction().begin();
+        em.persist(donante);
+        em.getTransaction().commit();
+        
+        desconectar();
+    }
+    
+    //Registrar Donante Apto
+    public void registrarDonanteApto(DonanteApto donanteA){
+        conectar();
+        
+        em.getTransaction().begin();
+        em.persist(donanteA);
+        em.getTransaction().commit();
+        
+        desconectar();
+    }
+    
+    //Registrar Donante No Apto
+    public void registrarDonanteNoApto(DonanteNoApto donanteNA){
+        conectar();
+        
+        em.getTransaction().begin();
+        em.persist(donanteNA);
         em.getTransaction().commit();
         
         desconectar();

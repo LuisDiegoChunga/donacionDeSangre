@@ -68,6 +68,10 @@
         <servlet-name>ObtenerExamenClinico</servlet-name>
         <servlet-class>atencion.servlet.ObtenerExamenClinico</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ValidarPostulante</servlet-name>
+        <servlet-class>atencion.servlet.ValidarPostulante</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ListarPostulantes</servlet-name>
         <url-pattern>/listar-postulantes</url-pattern>
@@ -135,6 +139,10 @@
     <servlet-mapping>
         <servlet-name>ObtenerExamenClinico</servlet-name>
         <url-pattern>/obtener-examen-clinico</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidarPostulante</servlet-name>
+        <url-pattern>/validar-postulante</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
