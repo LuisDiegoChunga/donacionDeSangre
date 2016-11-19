@@ -12,7 +12,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
+    <body id="contenido">
         <%
             List<ExamenClinico> examenesClinicos = (List<ExamenClinico>)request.getAttribute("examenesClinicos");
         %>
@@ -44,7 +44,8 @@
                         <td><%= examenClinico.getDniPost() %></td>
                         <td><%= examenClinico.getFechaEC() %></td>
                         <td>
-                            <a href="" class="btn btn-primary">Ver Examen Clinico</a>
+                            <a href="obtener-examen-clinico?codExaC=<%= examenClinico.getCodExaC() %>"
+                               class="btn btn-primary">Ver Examen Clinico</a>
                         </td>
                     </tr>
                     <%

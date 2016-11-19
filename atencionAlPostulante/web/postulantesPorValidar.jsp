@@ -13,7 +13,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
+    <body id="contenido">
         <nav>
             <div class="navbar-collapse collapse" id="cuadro" role="region">
                 <div class="container">

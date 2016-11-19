@@ -147,7 +147,7 @@ public class AtencionDAO {
         return donante;
     }
     
-    //Obtener entrevista segun su codigo
+    //Obtener Entrevista segun su codigo
     public Entrevista obtenerEntrevista(long codEnt){
         conectar();
         
@@ -155,6 +155,16 @@ public class AtencionDAO {
         
         desconectar();
         return entrevista;
+    }
+    
+    //Obtener Examen Clinico segun su codigo
+    public ExamenClinico obtenerExamenClinico(long codExaC){
+        conectar();
+        
+        ExamenClinico examenClinico = em.find(ExamenClinico.class, codExaC);
+        
+        desconectar();
+        return examenClinico;
     }
     
     //Registrar Postulante

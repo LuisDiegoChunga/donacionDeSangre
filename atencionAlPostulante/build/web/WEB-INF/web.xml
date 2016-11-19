@@ -60,6 +60,14 @@
         <servlet-name>ListadoExamenesClinicos</servlet-name>
         <servlet-class>atencion.servlet.ListadoExamenesClinicos</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ObtenerEntrevista</servlet-name>
+        <servlet-class>atencion.servlet.ObtenerEntrevista</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ObtenerExamenClinico</servlet-name>
+        <servlet-class>atencion.servlet.ObtenerExamenClinico</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ListarPostulantes</servlet-name>
         <url-pattern>/listar-postulantes</url-pattern>
@@ -119,6 +127,14 @@
     <servlet-mapping>
         <servlet-name>ListadoExamenesClinicos</servlet-name>
         <url-pattern>/listado-de-examenes-clinicos-postulantes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenerEntrevista</servlet-name>
+        <url-pattern>/obtener-entrevista</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ObtenerExamenClinico</servlet-name>
+        <url-pattern>/obtener-examen-clinico</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

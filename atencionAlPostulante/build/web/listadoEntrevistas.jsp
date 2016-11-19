@@ -12,7 +12,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
+    <body id="contenido">
         <%
             List<Entrevista> entrevistas = (List<Entrevista>)request.getAttribute("entrevistas");
         %>
@@ -44,7 +44,8 @@
                         <td><%= entrevista.getDniEnt() %></td>
                         <td><%= entrevista.getFechaEnt() %></td>
                         <td>
-                            <a href="" class="btn btn-primary">Ver Entrevista</a>
+                            <a href="obtener-entrevista?codEnt=<%= entrevista.getCodEnt() %>"
+                               class="btn btn-primary">Ver Entrevista</a>
                         </td>
                     </tr>
                     <%

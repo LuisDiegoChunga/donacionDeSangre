@@ -15,7 +15,7 @@
 
         <h1 class="text-center">Informacion del Paciente</h1>
         <h2>I. Datos Personales</h2>
-        <h3>Para la validacion del postulante, se va a tomar registro de los siguientes datos obtenidos:</h3>
+        <h3 style="margin-bottom: 30px">Para la validacion del postulante, se va a tomar registro de los siguientes datos obtenidos:</h3>
         <%
             Postulante postulanteValidar = (Postulante) request.getAttribute("postulanteValidar");
         %>
