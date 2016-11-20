@@ -72,6 +72,10 @@
         <servlet-name>ValidarPostulante</servlet-name>
         <servlet-class>atencion.servlet.ValidarPostulante</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ValidarDonante</servlet-name>
+        <servlet-class>atencion.servlet.ValidarDonante</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ListarPostulantes</servlet-name>
         <url-pattern>/listar-postulantes</url-pattern>
@@ -143,6 +147,10 @@
     <servlet-mapping>
         <servlet-name>ValidarPostulante</servlet-name>
         <url-pattern>/validar-postulante</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidarDonante</servlet-name>
+        <url-pattern>/validar-donante</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -303,6 +303,17 @@ public class AtencionDAO {
         desconectar();
     }
     
+    //Registrar Examen Complementario
+    public void registrarExamenComplementario(ExamenComplementario examenComplementario){
+        conectar();
+        
+        em.getTransaction().begin();
+        em.persist(examenComplementario);
+        em.getTransaction().commit();
+        
+        desconectar();
+    }
+    
     //Obtener usuario
     public Usuario obtenerUsuario(String user){
         conectar();
