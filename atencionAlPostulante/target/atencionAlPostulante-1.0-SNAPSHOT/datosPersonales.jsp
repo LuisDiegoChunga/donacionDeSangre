@@ -32,13 +32,70 @@
                         <tbody>
                             <tr>
                                 <td><label>Codigo de Postulante:</label></td>
-                                <td><input size="30" type="text" 
+                                <td colspan="6"><input size="30" type="text" 
                                            id="codP" name="codP" readonly/></td>
+                                
                             </tr>
                             <tr>
                                 <td><label>Fecha de Registro:</label></td>
-                                <td><input size="30" type="text" placeholder="Ingrese Fecha de registro"
-                                           id="fechaR" name="fechaR" required/></td>
+                                
+                                <td><label>Dia:</label></td>
+                                <td>
+                                    <select name="diaR">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </td>
+                                <td><label>Mes:</label></td>
+                                <td>
+                                    <select name="mesR">
+                                        <option value="1">Enero</option>
+                                        <option value="2">Febrero</option>
+                                        <option value="3">Marzo</option>
+                                        <option value="4">Abril</option>
+                                        <option value="5">Mayo</option>
+                                        <option value="6">Junio</option>
+                                        <option value="7">Julio</option>
+                                        <option value="8">Agosto</option>
+                                        <option value="9">Septiembre</option>
+                                        <option value="10">Octubre</option>
+                                        <option value="11">Noviembre</option>
+                                        <option value="12">Diciembre</option>
+                                    </select>
+                                </td>
+                                <td><label>Año:</label></td>
+                                <td>
+                                    <input size="5" type="text" placeholder="Año" id="anioR" name="anioR" required/>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -47,52 +104,115 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-1"><label>Nombre:</label></td>
-                                <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Nombre"
+                                <td class="col-md-1" colspan="6">
+                                    <input size="30" type="text" placeholder="Ingrese Nombre"
                                                             id="nombre" name="nombre" required/></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Ocupacion:</label></td>
-                                <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Ocupacion"
+                                <td class="col-md-1" colspan="6">
+                                    <input size="30" type="text" placeholder="Ingrese Ocupacion"
                                                             id="ocupacion" name="ocupacion" required/></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Lugar de Nacimiento:</label></td>
-                                <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Lugar de nacimiento"
+                                <td class="col-md-1" colspan="6">
+                                    <input size="30" type="text" placeholder="Ingrese Lugar de nacimiento"
                                                             id="lugarN" name="lugarN" required/></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Fecha de Nacimiento:</label></td>
-                                <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Fecha de nacimiento"
-                                                            id="fechaN" name="fechaN" required/></td>
+                                <td><label>Dia:</label></td>
+                                <td>
+                                    <select name="diaN">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </td>
+                                <td><label>Mes:</label></td>
+                                <td>
+                                    <select name="mesN">
+                                        <option value="1">Enero</option>
+                                        <option value="2">Febrero</option>
+                                        <option value="3">Marzo</option>
+                                        <option value="4">Abril</option>
+                                        <option value="5">Mayo</option>
+                                        <option value="6">Junio</option>
+                                        <option value="7">Julio</option>
+                                        <option value="8">Agosto</option>
+                                        <option value="9">Septiembre</option>
+                                        <option value="10">Octubre</option>
+                                        <option value="11">Noviembre</option>
+                                        <option value="12">Diciembre</option>
+                                    </select>
+                                </td>
+                                <td><label>Año:</label></td>
+                                <td>
+                                    <input size="5" type="text" placeholder="Año" id="anioN" name="anioN" required/>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Edad:</label></td>
-                                <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese edad"
+                                <td class="col-md-1" colspan="6">
+                                    <input size="30" type="text" placeholder="Ingrese edad"
                                                             id="edad" name="edad" required/></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Distrito:</label></td>
-                                <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Distrito"
+                                <td class="col-md-1" colspan="6"><input size="30" type="text" placeholder="Ingrese Distrito"
                                                             id="distrito" name="distrito" required/></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Domicilio:</label></td>
-                                <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Domicilio"
+                                <td class="col-md-1" colspan="6">
+                                    <input size="30" type="text" placeholder="Ingrese Domicilio"
                                                             id="domicilio" name="domicilio" required/></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Centro de Trabajo:</label></td>
-                                <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Centro de Trabajo"
+                                <td class="col-md-1" colspan="6">
+                                    <input size="30" type="text" placeholder="Ingrese Centro de Trabajo"
                                                             id="centroT" name="centroT" required/></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Telefono Casa:</label></td>
-                                <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Telefono Casa"
+                                <td class="col-md-1" colspan="6">
+                                    <input size="30" type="text" placeholder="Ingrese Telefono Casa"
                                                             id="telCasa" name="telCasa" required/></td>
                             </tr>
                             <tr>
                                 <td class="col-md-1"><label>Celular:</label></td>
-                                <td class="col-md-1"><input size="30" type="text" placeholder="Ingrese Celular"
+                                <td class="col-md-1" colspan="6">
+                                    <input size="30" type="text" placeholder="Ingrese Celular"
                                                             id="celular" name="celular" required/></td>
                             </tr>
                         </tbody>

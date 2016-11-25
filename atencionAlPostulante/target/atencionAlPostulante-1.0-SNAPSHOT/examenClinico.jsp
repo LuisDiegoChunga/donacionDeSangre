@@ -57,7 +57,7 @@
                         <tr>
                             <td class="col-md-4"><label>Talla (cm): </label></td>
                             <td class="col-md-4"><input size="20" type="text"
-                                                         id="tallaM" name="tallaM" required/></td>
+                                                         id="tallaCM" name="tallaCM" required/></td>
                         </tr>
                         <tr>
                             <td class="col-md-6"><label>P.A (mmHg) [fraccion]: </label></td>

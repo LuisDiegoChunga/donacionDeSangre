@@ -1,15 +1,30 @@
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\clases\ExamenComplementario.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\clases\ExamenClinico.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\clases\PostulanteApto.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\clases\DonanteNoApto.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\servlet\GuardarPostulante.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\servlet\LogoutUsuario.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\clases\Usuario.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\clases\Donante.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\clases\PostulanteNoApto.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\servlet\ListarPostulantes.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\servlet\LoginUsuario.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\clases\AtencionDAO.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\clases\DonanteApto.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\clases\Entrevista.java
-E:\Luis Chunga\Universidad de Lima\Periodos de estudio\Periodo 2016-2 (agosto a diciembre)\Ingenieria de Software II\Semana 13\atencion-al-postulante\atencionAlPostulante\src\main\java\atencion\clases\Postulante.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\clases\AtencionDAO.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\ObtenerDonanteValidacion.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\ListadoDonantesPorValidar.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\ObtenerPostulanteValidacion.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\ValidarPostulante.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\ListadoPostulantesPorValidar.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\LogoutUsuario.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\clases\ExamenComplementario.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\LoginUsuario.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\clases\DonanteApto.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\ModificarPostulante.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\ValidarDonante.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\clases\Usuario.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\clases\ExamenClinico.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\GuardarEntrevista.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\clases\DonanteNoApto.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\ListadoEntrevistasPostulantes.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\clases\PostulanteApto.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\clases\Entrevista.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\ObtenerExamenClinico.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\GuardarPostulante.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\ListarPostulantes.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\clases\Postulante.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\EliminarPostulante.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\GuardarExamenClinico.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\clases\PostulanteNoApto.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\ObtenerPostulante.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\clases\Donante.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\ListadoExamenesClinicos.java
+E:\IS2\entrega-proyecto\atencionAlPostulante\src\main\java\atencion\servlet\ObtenerEntrevista.java

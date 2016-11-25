@@ -30,7 +30,7 @@ public class GuardarExamenClinico extends HttpServlet {
                     request.getParameter("fechaEC"),
                     Integer.parseInt(request.getParameter("pesoKG")),
                     request.getParameter("pa"),
-                    Integer.parseInt(request.getParameter("tallaM")),
+                    Integer.parseInt(request.getParameter("tallaCM")),
                     Integer.parseInt(request.getParameter("pulso")),
                     estAV,
                     request.getParameter("obs"),

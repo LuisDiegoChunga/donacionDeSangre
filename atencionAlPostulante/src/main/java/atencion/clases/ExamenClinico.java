@@ -24,7 +24,7 @@ public class ExamenClinico {
     @Column
     private String pa;
     @Column
-    private int tallaM;
+    private int tallaCM;
     @Column
     private int pulso;
     @Column
@@ -37,14 +37,14 @@ public class ExamenClinico {
     public ExamenClinico() {
     }
 
-    public ExamenClinico(long codExaC, String nombrePost, String dniPost, String fechaEC, int pesoKG, String pa, int tallaM, int pulso, String estAV, String obs, String examinador) {
+    public ExamenClinico(long codExaC, String nombrePost, String dniPost, String fechaEC, int pesoKG, String pa, int tallaCM, int pulso, String estAV, String obs, String examinador) {
         this.codExaC = codExaC;
         this.nombrePost = nombrePost;
         this.dniPost = dniPost;
         this.fechaEC = fechaEC;
         this.pesoKG = pesoKG;
         this.pa = pa;
-        this.tallaM = tallaM;
+        this.tallaCM = tallaCM;
         this.pulso = pulso;
         this.estAV = estAV;
         this.obs = obs;
@@ -99,12 +99,12 @@ public class ExamenClinico {
         this.pa = pa;
     }
 
-    public int getTallaM() {
-        return tallaM;
+    public int getTallaCM() {
+        return tallaCM;
     }
 
-    public void setTallaM(int tallaM) {
-        this.tallaM = tallaM;
+    public void setTallaCM(int tallaCM) {
+        this.tallaCM = tallaCM;
     }
 
     public int getPulso() {
@@ -138,9 +138,6 @@ public class ExamenClinico {
     public void setExaminador(String examinador) {
         this.examinador = examinador;
     }
-    
-    
-    
     
     
 }

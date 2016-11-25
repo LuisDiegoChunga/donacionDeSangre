@@ -1,6 +1,5 @@
-<%@page import="atencion.clases.Entrevista"%>
-<%@page import="atencion.clases.Postulante"%>
 <%@page import="java.util.List"%>
+<%@page import="atencion.clases.Postulante"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -42,18 +41,18 @@
             </div>
         </nav>
         <%
-            List<Postulante> postulantesValidar = (List<Postulante>)request.getAttribute("postulantesValidar");
+            List<Postulante> postulantesValidar = (List<Postulante>) request.getAttribute("postulantesValidar");
         %>
         <div class="container">
             <h1 class="text-center">Listado de Postulantes a validar</h1>
             
             <div class="col-md-3">
                 <a href="listado-entrevistas-a-postulantes" class="btn btn-primary"
-                   style="margin-top: 20px; margin-bottom: 20px">Entrevistas a Postulantes</a>
+                   style="margin-top: 20px; margin-bottom: 20px">Entrevistas a los Postulantes</a>
             </div>
             <div class="col-md-3">
                 <a href="listado-de-examenes-clinicos-postulantes" class="btn btn-primary"
-                   style="margin-top: 20px; margin-bottom: 20px">Examenes Clinicos a Postulantes </a>
+                   style="margin-top: 20px; margin-bottom: 20px">Examenes Clinicos a los Postulantes</a>
             </div>
             
             <table class="table table-hover">
