@@ -18,7 +18,11 @@ public class Entrevista {
     @Column
     private String dniEnt;
     @Column
-    private String fechaEnt;
+    private String diaEnt;
+    @Column
+    private String mesEnt;
+    @Column
+    private String anioEnt;
     @Column
     private String preg1;
     @Column
@@ -73,11 +77,13 @@ public class Entrevista {
     public Entrevista() {
     }
 
-    public Entrevista(long codEnt, String nombreEnt, String dniEnt, String fechaEnt, String preg1, String preg2, String preg3, String preg4, String preg5, String preg6, String preg7, String preg8, String preg9, String preg10, String preg11, String preg12, String preg13, String preg14, String preg15, String preg16, String preg17, String preg18, String preg19, String preg20, String preg21, String preg22, String preg23, String preg24, String entrevistador) {
+    public Entrevista(long codEnt, String nombreEnt, String dniEnt, String diaEnt, String mesEnt, String anioEnt, String preg1, String preg2, String preg3, String preg4, String preg5, String preg6, String preg7, String preg8, String preg9, String preg10, String preg11, String preg12, String preg13, String preg14, String preg15, String preg16, String preg17, String preg18, String preg19, String preg20, String preg21, String preg22, String preg23, String preg24, String entrevistador) {
         this.codEnt = codEnt;
         this.nombreEnt = nombreEnt;
         this.dniEnt = dniEnt;
-        this.fechaEnt = fechaEnt;
+        this.diaEnt = diaEnt;
+        this.mesEnt = mesEnt;
+        this.anioEnt = anioEnt;
         this.preg1 = preg1;
         this.preg2 = preg2;
         this.preg3 = preg3;
@@ -129,12 +135,28 @@ public class Entrevista {
         this.dniEnt = dniEnt;
     }
 
-    public String getFechaEnt() {
-        return fechaEnt;
+    public String getDiaEnt() {
+        return diaEnt;
     }
 
-    public void setFechaEnt(String fechaEnt) {
-        this.fechaEnt = fechaEnt;
+    public void setDiaEnt(String diaEnt) {
+        this.diaEnt = diaEnt;
+    }
+
+    public String getMesEnt() {
+        return mesEnt;
+    }
+
+    public void setMesEnt(String mesEnt) {
+        this.mesEnt = mesEnt;
+    }
+
+    public String getAnioEnt() {
+        return anioEnt;
+    }
+
+    public void setAnioEnt(String anioEnt) {
+        this.anioEnt = anioEnt;
     }
 
     public String getPreg1() {

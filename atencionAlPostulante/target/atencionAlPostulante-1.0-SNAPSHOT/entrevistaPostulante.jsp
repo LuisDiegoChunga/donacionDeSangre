@@ -19,23 +19,79 @@
                     <tbody>
                         <tr>
                             <td><label>Codigo de Entrevista:</label></td>
-                            <td><input size="30" type="text" 
+                            <td colspan="6"><input size="30" type="text" 
                                        id="codEnt" name="codEnt" readonly/></td>
                         </tr>
                         <tr>
                             <td><label>Nombre del entrevistado:</label></td>
-                            <td><input size="30" type="text" 
+                            <td colspan="6"><input size="30" type="text" 
                                        id="nombreEnt" name="nombreEnt" required/></td>
                         </tr>
                         <tr>
                             <td><label>DNI del entrevistado:</label></td>
-                            <td><input size="30" type="text" 
+                            <td colspan="6"><input size="30" type="text" 
                                        id="dniEnt" name="dniEnt" required/></td>
                         </tr>
                         <tr>
                             <td><label>Fecha de la entrevista:</label></td>
-                            <td><input size="30" type="text"
-                                       id="fechaEnt" name="fechaEnt" required/></td>
+                            <td><label>Dia:</label></td>
+                            <td>
+                                <select name="diaEnt">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </td>
+                            <td><label>Mes:</label></td>
+                            <td>
+                                <select name="mesEnt">
+                                    <option value="1">Enero</option>
+                                    <option value="2">Febrero</option>
+                                    <option value="3">Marzo</option>
+                                    <option value="4">Abril</option>
+                                    <option value="5">Mayo</option>
+                                    <option value="6">Junio</option>
+                                    <option value="7">Julio</option>
+                                    <option value="8">Agosto</option>
+                                    <option value="9">Septiembre</option>
+                                    <option value="10">Octubre</option>
+                                    <option value="11">Noviembre</option>
+                                    <option value="12">Diciembre</option>
+                                </select>
+                            </td>
+                            <td><label>Año:</label></td>
+                            <td>
+                                <input size="5" type="text" placeholder="Año" 
+                                       id="anioEnt" name="anioEnt" required/>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -48,8 +104,8 @@
                             <td class="col-md-6"><label>1. ¿Ha donado sangre alguna vez?</label></td>
                             <td class="col-md-6">
                                 <select name="preg1">
-                                    <option value="1.1">Si</option>
-                                    <option value="1.2">No</option>
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
                                 </select>
                             </td>
                         </tr>
@@ -58,8 +114,8 @@
                                 <label>2. ¿Donó sangre en los ultimos tres meses?</label></td>
                             <td class="col-md-6">
                                 <select name="preg2">
-                                    <option value="2.1">Si</option>
-                                    <option value="2.2">No</option>
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
                                 </select>
                             </td>
                         </tr>
@@ -67,8 +123,8 @@
                             <td class="col-md-6"><label>3. ¿Se puso nervioso cuando donó sangre?</label></td>
                             <td class="col-md-6">
                                 <select name="preg3">
-                                    <option value="3.1">Si</option>
-                                    <option value="3.2">No</option>
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
                                 </select>
                             </td>
                         </tr>
@@ -95,8 +151,8 @@
                             <td class="col-md-6"><label>7. ¿Está gestando?</label></td>
                             <td class="col-md-6">
                                 <select name="preg7">
-                                    <option value="7.1">Si</option>
-                                    <option value="7.2">No</option>
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
                                 </select>
                             </td>
                         </tr>
@@ -108,8 +164,8 @@
                             <td class="col-md-6"><label>9. ¿Está dando de lactar?</label></td>
                             <td class="col-md-6">
                                 <select name="preg9">
-                                    <option value="9.1">Si</option>
-                                    <option value="9.2">No</option>
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
                                 </select>
                             </td>
                         </tr>
@@ -118,8 +174,8 @@
                                 <label>10. ¿Ha sido operado en los últimos seis meses?</label></td>
                             <td class="col-md-6">
                                 <select name="preg10">
-                                    <option value="10.1">Si</option>
-                                    <option value="10.2">No</option>
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
                                 </select>
                             </td>
                         </tr>
@@ -142,8 +198,8 @@
                             </td>
                             <td class="col-md-6">
                                 <select name="preg13">
-                                    <option value="13.1">Si</option>
-                                    <option value="13.2">No</option>
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
                                 </select>
                             </td>
                         </tr>
@@ -217,8 +273,8 @@
                             </td>
                             <td class="col-md-6">
                                 <select name="preg16">
-                                    <option value="16.1">Si</option>
-                                    <option value="16.2">No</option>
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
                                 </select>
                             </td>
                         </tr>
@@ -228,8 +284,8 @@
                             </td>
                             <td class="col-md-6">
                                 <select name="preg17">
-                                    <option value="17.1">Si</option>
-                                    <option value="17.2">No</option>
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
                                 </select>
                             </td>
                         </tr>
@@ -239,8 +295,8 @@
                             </td>
                             <td class="col-md-6">
                                 <select name="preg18">
-                                    <option value="18.1">Si</option>
-                                    <option value="18.2">No</option>
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
                                 </select>
                             </td>
                         </tr>
@@ -256,8 +312,8 @@
                             </td>
                             <td class="col-md-6">
                                 <select name="preg20">
-                                    <option value="20.1">Si</option>
-                                    <option value="20.2">No</option>
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
                                 </select>
                             </td>
                         </tr>
@@ -278,13 +334,13 @@
                             </td>
                             <td class="col-md-6">
                                 <select name="preg22">
-                                    <option value="22.1">Ninguna</option>
-                                    <option value="22.2">1</option>
-                                    <option value="22.3">2</option>
-                                    <option value="22.4">3</option>
-                                    <option value="22.5">4</option>
-                                    <option value="22.6">5</option>
-                                    <option value="22.7">Mas de 5</option>
+                                    <option value="1">Ninguna</option>
+                                    <option value="2">1</option>
+                                    <option value="3">2</option>
+                                    <option value="4">3</option>
+                                    <option value="5">4</option>
+                                    <option value="6">5</option>
+                                    <option value="7">Mas de 5</option>
                                 </select>
                             </td>
                         </tr>
@@ -296,8 +352,8 @@
                             </td>
                             <td class="col-md-6">
                                 <select name="preg23">
-                                    <option value="23.1">Si</option>
-                                    <option value="23.2">No</option>
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
                                 </select>
                             </td>
                         </tr>
