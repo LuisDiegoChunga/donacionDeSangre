@@ -17,7 +17,7 @@
         %>
         <h1 class="text-center">Entrevista al (a la) Postulante <%= entrevista.getNombreEnt() %></h1>
         
-        <div class="col-lg-6">
+        <div class="col-lg-8">
             <div class="col-md-2">
                 <a href="listado-entrevistas-a-postulantes" class="btn btn-primary"
                    style="margin-top: 20px; margin-bottom: 20px">Regresar</a>
@@ -26,28 +26,34 @@
             <table class="table table-hover table-bordered">
                 <tbody>
                     <tr>
-                        <td><label>Codigo de Entrevista:</label></td>
-                        <td><input size="30" type="text" 
+                        <td class="col-md-4"><label>Codigo de Entrevista:</label></td>
+                        <td class="col-md-4"><input size="30" type="text" 
                                    id="codEnt" name="codEnt"
                                    value="<%= entrevista.getCodEnt()%>" readonly/></td>
                     </tr>
                     <tr>
-                        <td><label>Nombre del entrevistado:</label></td>
-                        <td><input size="30" type="text"
+                        <td class="col-md-4"><label>Nombre del entrevistado:</label></td>
+                        <td class="col-md-4"><input size="30" type="text"
                                    id="nombreEnt" name="nombreEnt"
                                    value="<%= entrevista.getNombreEnt()%>" readonly/></td>
                     </tr>
                     <tr>
-                        <td><label>DNI del entrevistado:</label></td>
-                        <td><input size="30" type="text"
+                        <td class="col-md-4"><label>DNI del entrevistado:</label></td>
+                        <td class="col-md-4"><input size="30" type="text"
                                    id="dniEnt" name="dniEnt" 
                                    value="<%= entrevista.getDniEnt()%>" readonly/></td>
                     </tr>
                     <tr>
-                        <td><label>Fecha de la entrevista:</label></td>
-                        <td><input size="30" type="text"
-                                   id="fechaEnt" name="fechaEnt" 
-                                   value="<%= entrevista.getFechaEnt()%>" readonly/></td>
+                        <td class="col-md-4"><label>Fecha de la entrevista:</label></td>
+                        <td><label>Dia:</label></td>
+                        <td><input size="5" type="text" id="diaEnt" name="diaEnt"
+                                   value="<%= entrevista.getDiaEnt() %>" readonly/></td>
+                        <td><label>Mes:</label></td>
+                        <td><input size="10" type="text" id="mesEnt" name="mesEnt"
+                                   value="<%= entrevista.getMesEnt() %>" readonly/></td>
+                        <td><label>Año:</label></td>
+                        <td><input size="5" type="text" id="anioEnt" name="anioEnt"
+                                   value="<%= entrevista.getAnioEnt() %>" readonly/></td>
                     </tr>
                 </tbody>
             </table>

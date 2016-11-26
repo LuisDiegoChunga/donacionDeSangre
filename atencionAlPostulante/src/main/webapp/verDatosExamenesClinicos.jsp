@@ -45,6 +45,9 @@
                                    value="<%= examenClinico.getFechaEC()%>" readonly/></td>
                     </tr>
                     <tr>
+                        
+                    </tr>
+                    <tr>
                         <td><label>Nombre del Examinador:</label></td>
                         <td><input size="20" type="text" id="examinador" name="examinador"
                                    value="<%= examenClinico.getExaminador()%>" readonly/></td>

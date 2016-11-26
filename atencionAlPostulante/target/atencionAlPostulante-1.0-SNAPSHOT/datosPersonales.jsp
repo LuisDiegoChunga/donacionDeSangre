@@ -15,30 +15,24 @@
             <h1 class="text-center">FORMATO DE SELECCION DEL POSTULANTE</h1>
             <h2>I. DATOS PERSONALES</h2>
             <form method="post" action="guardar-postulante">
-                <div>
-                    <div class="col-md-3" style="margin-bottom: 30px; margin-top: 20px">
-                        <label>DNI:</label>
-                    </div>
-                    <div class="col-md-3" style="margin-bottom: 30px; margin-top: 20px">
-                        <input size="30" type="text" placeholder="Ingrese DNI" id="dni" name="dni" required/>
-                    </div>
-                    <div class="col-md-3" style="margin-bottom: 30px; margin-top: 20px">
-                        <a href="" class="btn btn-primary">Buscar</a>
-                    </div>
+                <div class="col-lg-8" style="margin-top: 20px; margin-bottom: 40px">
+                    <label>DNI:</label>
+                    <input style="margin-left: 40px" size="30" type="text" placeholder="Ingrese DNI" 
+                           id="dni" name="dni" required/>
+                    <a style="margin-left: 40px" href="" class="btn btn-primary">Buscar</a>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-8">
                     <table class="table table-hover table-bordered">
                         <tbody>
                             <tr>
-                                <td><label>Codigo de Postulante:</label></td>
-                                <td colspan="6"><input size="30" type="text" 
-                                           id="codP" name="codP" readonly/></td>
-                                
+                                <td class="col-md-4"><label>Codigo de Postulante:</label></td>
+                                <td colspan="6" class="col-md-4"><input size="30" type="text" 
+                                                       id="codP" name="codP" readonly/></td>
+
                             </tr>
                             <tr>
-                                <td><label>Fecha de Registro:</label></td>
-                                
+                                <td class="col-md-4"><label>Fecha de Registro:</label></td>
                                 <td><label>Dia:</label></td>
                                 <td>
                                     <select name="diaR">
@@ -75,6 +69,7 @@
                                         <option value="31">31</option>
                                     </select>
                                 </td>
+                                
                                 <td><label>Mes:</label></td>
                                 <td>
                                     <select name="mesR">
@@ -92,6 +87,7 @@
                                         <option value="12">Diciembre</option>
                                     </select>
                                 </td>
+                                
                                 <td><label>Año:</label></td>
                                 <td>
                                     <input size="5" type="text" placeholder="Año" id="anioR" name="anioR" required/>
@@ -103,25 +99,25 @@
                     <table class="table table-hover table-bordered">
                         <tbody>
                             <tr>
-                                <td class="col-md-1"><label>Nombre:</label></td>
-                                <td class="col-md-1" colspan="6">
+                                <td class="col-md-4"><label>Nombre:</label></td>
+                                <td class="col-md-4" colspan="6">
                                     <input size="30" type="text" placeholder="Ingrese Nombre"
-                                                            id="nombre" name="nombre" required/></td>
+                                           id="nombre" name="nombre" required/></td>
                             </tr>
                             <tr>
-                                <td class="col-md-1"><label>Ocupacion:</label></td>
-                                <td class="col-md-1" colspan="6">
+                                <td class="col-md-4"><label>Ocupacion:</label></td>
+                                <td class="col-md-4" colspan="6">
                                     <input size="30" type="text" placeholder="Ingrese Ocupacion"
-                                                            id="ocupacion" name="ocupacion" required/></td>
+                                           id="ocupacion" name="ocupacion" required/></td>
                             </tr>
                             <tr>
-                                <td class="col-md-1"><label>Lugar de Nacimiento:</label></td>
-                                <td class="col-md-1" colspan="6">
+                                <td class="col-md-4"><label>Lugar de Nacimiento:</label></td>
+                                <td class="col-md-4" colspan="6">
                                     <input size="30" type="text" placeholder="Ingrese Lugar de nacimiento"
-                                                            id="lugarN" name="lugarN" required/></td>
+                                           id="lugarN" name="lugarN" required/></td>
                             </tr>
                             <tr>
-                                <td class="col-md-1"><label>Fecha de Nacimiento:</label></td>
+                                <td class="col-md-4"><label>Fecha de Nacimiento:</label></td>
                                 <td><label>Dia:</label></td>
                                 <td>
                                     <select name="diaN">
@@ -181,60 +177,60 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="col-md-1"><label>Edad:</label></td>
-                                <td class="col-md-1" colspan="6">
+                                <td class="col-md-4"><label>Edad:</label></td>
+                                <td class="col-md-4" colspan="6">
                                     <input size="30" type="text" placeholder="Ingrese edad"
-                                                            id="edad" name="edad" required/></td>
+                                           id="edad" name="edad" required/></td>
                             </tr>
                             <tr>
-                                <td class="col-md-1"><label>Distrito:</label></td>
-                                <td class="col-md-1" colspan="6"><input size="30" type="text" placeholder="Ingrese Distrito"
-                                                            id="distrito" name="distrito" required/></td>
+                                <td class="col-md-4"><label>Distrito:</label></td>
+                                <td class="col-md-4" colspan="6"><input size="30" type="text" placeholder="Ingrese Distrito"
+                                                                        id="distrito" name="distrito" required/></td>
                             </tr>
                             <tr>
-                                <td class="col-md-1"><label>Domicilio:</label></td>
-                                <td class="col-md-1" colspan="6">
+                                <td class="col-md-4"><label>Domicilio:</label></td>
+                                <td class="col-md-4" colspan="6">
                                     <input size="30" type="text" placeholder="Ingrese Domicilio"
-                                                            id="domicilio" name="domicilio" required/></td>
+                                           id="domicilio" name="domicilio" required/></td>
                             </tr>
                             <tr>
-                                <td class="col-md-1"><label>Centro de Trabajo:</label></td>
-                                <td class="col-md-1" colspan="6">
+                                <td class="col-md-4"><label>Centro de Trabajo:</label></td>
+                                <td class="col-md-4" colspan="6">
                                     <input size="30" type="text" placeholder="Ingrese Centro de Trabajo"
-                                                            id="centroT" name="centroT" required/></td>
+                                           id="centroT" name="centroT" required/></td>
                             </tr>
                             <tr>
-                                <td class="col-md-1"><label>Telefono Casa:</label></td>
-                                <td class="col-md-1" colspan="6">
+                                <td class="col-md-4"><label>Telefono Casa:</label></td>
+                                <td class="col-md-4" colspan="6">
                                     <input size="30" type="text" placeholder="Ingrese Telefono Casa"
-                                                            id="telCasa" name="telCasa" required/></td>
+                                           id="telCasa" name="telCasa" required/></td>
                             </tr>
                             <tr>
-                                <td class="col-md-1"><label>Celular:</label></td>
-                                <td class="col-md-1" colspan="6">
+                                <td class="col-md-4"><label>Celular:</label></td>
+                                <td class="col-md-4" colspan="6">
                                     <input size="30" type="text" placeholder="Ingrese Celular"
-                                                            id="celular" name="celular" required/></td>
+                                           id="celular" name="celular" required/></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-8">
                     <table class="table table-hover table-bordered">
                         <tbody>
                             <tr>
-                                <td class="col-md-1"><label>Sexo:</label></td>
-                                <td class="col-md-1">
-                                    <select name="sexo">
+                                <td class="col-md-4"><label>Sexo:</label></td>
+                                <td class="col-md-4">
+                                    <select name="sexo" style="padding-left: 49px; padding-right: 49px">
                                         <option value="F">F</option>
                                         <option value="M">M</option>
                                     </select>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="col-md-1"><label>
+                                <td class="col-md-4"><label>
                                         Estado Civil:</label></td>
-                                <td class="col-md-1">
-                                    <select name="estadoC">
+                                <td class="col-md-4">
+                                    <select name="estadoC" style="padding-left: 10px; padding-right: 10px">
                                         <option value="ec1">Soltero (a)</option>
                                         <option value="ec2">Casado (a)</option>
                                         <option value="ec3">Viudo (a)</option>
@@ -244,9 +240,9 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="col-md-1"><label>Grupo Sanguineo:</label></td>
-                                <td class="col-md-1">
-                                    <select name="grupoS">
+                                <td class="col-md-4"><label>Grupo Sanguineo:</label></td>
+                                <td class="col-md-4">
+                                    <select name="grupoS" style="padding-left: 46px; padding-right: 46px">
                                         <option value="O">O</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -255,19 +251,19 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="col-md-1"><label>Factor Rh:</label></td>
-                                <td class="col-md-1">
-                                    <select name="factorRh">
+                                <td class="col-md-4"><label>Factor Rh:</label></td>
+                                <td class="col-md-4">
+                                    <select name="factorRh" style="padding-left: 27px; padding-right: 27px">
                                         <option value="pos">Positivo</option>
                                         <option value="neg">Negativo</option>
                                     </select>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="col-md-1">
+                                <td class="col-md-4">
                                     <label>Tipo de Donacion:</label></td>
-                                <td class="col-md-1">
-                                    <select name="tipoDon">
+                                <td class="col-md-4">
+                                    <select name="tipoDon" style="padding-left: 20px; padding-right: 20px">
                                         <option value="vol">Voluntaria</option>
                                         <option value="rep">Reposicion</option>
                                         <option value="aut">Autologa</option>
@@ -278,7 +274,7 @@
                     </table>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6" style="margin-bottom: 80px">
                     <input type="hidden" name="modo" value="registrar1"/>
                     <input type="submit" class="btn btn-primary" value="Continuar" />
                     <a href="listar-postulantes" class="btn btn-primary" style="margin-left: 20px">Cancelar</a>

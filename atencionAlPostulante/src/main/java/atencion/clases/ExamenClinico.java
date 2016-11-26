@@ -18,7 +18,11 @@ public class ExamenClinico {
     @Column
     private String dniPost;
     @Column
-    private String fechaEC;
+    private String diaEC;
+    @Column
+    private String mesEC;
+    @Column
+    private String anioEC;
     @Column
     private int pesoKG;
     @Column
@@ -37,11 +41,13 @@ public class ExamenClinico {
     public ExamenClinico() {
     }
 
-    public ExamenClinico(long codExaC, String nombrePost, String dniPost, String fechaEC, int pesoKG, String pa, int tallaCM, int pulso, String estAV, String obs, String examinador) {
+    public ExamenClinico(long codExaC, String nombrePost, String dniPost, String diaEC, String mesEC, String anioEC, int pesoKG, String pa, int tallaCM, int pulso, String estAV, String obs, String examinador) {
         this.codExaC = codExaC;
         this.nombrePost = nombrePost;
         this.dniPost = dniPost;
-        this.fechaEC = fechaEC;
+        this.diaEC = diaEC;
+        this.mesEC = mesEC;
+        this.anioEC = anioEC;
         this.pesoKG = pesoKG;
         this.pa = pa;
         this.tallaCM = tallaCM;
@@ -75,12 +81,28 @@ public class ExamenClinico {
         this.dniPost = dniPost;
     }
 
-    public String getFechaEC() {
-        return fechaEC;
+    public String getDiaEC() {
+        return diaEC;
     }
 
-    public void setFechaEC(String fechaEC) {
-        this.fechaEC = fechaEC;
+    public void setDiaEC(String diaEC) {
+        this.diaEC = diaEC;
+    }
+
+    public String getMesEC() {
+        return mesEC;
+    }
+
+    public void setMesEC(String mesEC) {
+        this.mesEC = mesEC;
+    }
+
+    public String getAnioEC() {
+        return anioEC;
+    }
+
+    public void setAnioEC(String anioEC) {
+        this.anioEC = anioEC;
     }
 
     public int getPesoKG() {
@@ -138,6 +160,7 @@ public class ExamenClinico {
     public void setExaminador(String examinador) {
         this.examinador = examinador;
     }
+    
     
     
 }

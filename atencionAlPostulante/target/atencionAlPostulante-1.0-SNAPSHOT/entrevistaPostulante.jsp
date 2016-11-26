@@ -14,26 +14,26 @@
         <form method="post" action="guardar-entrevista">
             <h1 style="text-align: center">FORMATO DE SELECCION DEL POSTULANTE</h1>
             <h2>II. PROTOCOLO DE SELECCION AL DONANTE DE SANGRE</h2>
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <table class="table table-hover table-bordered">
                     <tbody>
                         <tr>
-                            <td><label>Codigo de Entrevista:</label></td>
-                            <td colspan="6"><input size="30" type="text" 
-                                       id="codEnt" name="codEnt" readonly/></td>
+                            <td class="col-md-4"><label>Codigo de Entrevista:</label></td>
+                            <td class="col-md-4" colspan="6"><input size="30" type="text" 
+                                                                    id="codEnt" name="codEnt" readonly/></td>
                         </tr>
                         <tr>
-                            <td><label>Nombre del entrevistado:</label></td>
-                            <td colspan="6"><input size="30" type="text" 
-                                       id="nombreEnt" name="nombreEnt" required/></td>
+                            <td class="col-md-4"><label>Nombre del entrevistado:</label></td>
+                            <td class="col-md-4" colspan="6"><input size="30" type="text" 
+                                                                    id="nombreEnt" name="nombreEnt" required/></td>
                         </tr>
                         <tr>
-                            <td><label>DNI del entrevistado:</label></td>
-                            <td colspan="6"><input size="30" type="text" 
-                                       id="dniEnt" name="dniEnt" required/></td>
+                            <td class="col-md-4"><label>DNI del entrevistado:</label></td>
+                            <td class="col-md-4" colspan="6"><input size="30" type="text" 
+                                                                    id="dniEnt" name="dniEnt" required/></td>
                         </tr>
                         <tr>
-                            <td><label>Fecha de la entrevista:</label></td>
+                            <td class="col-md-4"><label>Fecha de la entrevista:</label></td>
                             <td><label>Dia:</label></td>
                             <td>
                                 <select name="diaEnt">
@@ -70,6 +70,7 @@
                                     <option value="31">31</option>
                                 </select>
                             </td>
+
                             <td><label>Mes:</label></td>
                             <td>
                                 <select name="mesEnt">
@@ -87,6 +88,7 @@
                                     <option value="12">Diciembre</option>
                                 </select>
                             </td>
+
                             <td><label>Año:</label></td>
                             <td>
                                 <input size="5" type="text" placeholder="Año" 
@@ -371,17 +373,14 @@
                 </table>
             </div>
 
-            <div>
-                <div class="col-md-4" style="margin-bottom: 40px; margin-top: 20px">
-                    <label>Nombre del Entrevistador:</label>
-                </div>
-                <div class="col-md-4" style="margin-bottom: 40px; margin-top: 20px">
-                    <input size="30" type="text" id="entrevistador" name="entrevistador" required/>
-                </div>
-                <div class="col-md-4" style="margin-bottom: 40px; margin-top: 20px">
-                    <input type="hidden" name="modo" value="registrar2"/>
-                    <input type="submit" class="btn btn-primary" value="Guardar"/>
-                </div>
+            <div class="col-lg-8" style="margin-bottom: 80px">
+                <label>Nombre del Entrevistador:</label>
+                
+                <input style="margin-left: 50px" size="30" type="text" 
+                       id="entrevistador" name="entrevistador" required/>
+                
+                <input type="hidden" name="modo" value="registrar2"/>
+                <input style="margin-left: 50px" type="submit" class="btn btn-primary" value="Guardar"/>
             </div>
 
         </form>
