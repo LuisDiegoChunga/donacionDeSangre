@@ -86,12 +86,107 @@ public class ValidarDonante extends HttpServlet {
                 ec9 = "Negativo";
             }
             
+            String diaECOM = request.getParameter("diaECOM");
+            if(diaECOM.equals("1")){
+                diaECOM = "1";
+            }else if(diaECOM.equals("2")){
+                diaECOM = "2";
+            }else if(diaECOM.equals("3")){
+                diaECOM = "3";
+            }else if(diaECOM.equals("4")){
+                diaECOM = "4";
+            }else if(diaECOM.equals("5")){
+                diaECOM = "5";
+            }else if(diaECOM.equals("6")){
+                diaECOM = "6";
+            }else if(diaECOM.equals("7")){
+                diaECOM = "7";
+            }else if(diaECOM.equals("8")){
+                diaECOM = "8";
+            }else if(diaECOM.equals("9")){
+                diaECOM = "9";
+            }else if(diaECOM.equals("10")){
+                diaECOM = "10";
+            }else if(diaECOM.equals("11")){
+                diaECOM = "11";
+            }else if(diaECOM.equals("12")){
+                diaECOM = "12";
+            }else if(diaECOM.equals("13")){
+                diaECOM = "13";
+            }else if(diaECOM.equals("14")){
+                diaECOM = "14";
+            }else if(diaECOM.equals("15")){
+                diaECOM = "15";
+            }else if(diaECOM.equals("16")){
+                diaECOM = "16";
+            }else if(diaECOM.equals("17")){
+                diaECOM = "17";
+            }else if(diaECOM.equals("18")){
+                diaECOM = "18";
+            }else if(diaECOM.equals("19")){
+                diaECOM = "19";
+            }else if(diaECOM.equals("20")){
+                diaECOM = "20";
+            }else if(diaECOM.equals("21")){
+                diaECOM = "21";
+            }else if(diaECOM.equals("22")){
+                diaECOM = "22";
+            }else if(diaECOM.equals("23")){
+                diaECOM = "23";
+            }else if(diaECOM.equals("24")){
+                diaECOM = "24";
+            }else if(diaECOM.equals("25")){
+                diaECOM = "25";
+            }else if(diaECOM.equals("26")){
+                diaECOM = "26";
+            }else if(diaECOM.equals("27")){
+                diaECOM = "27";
+            }else if(diaECOM.equals("28")){
+                diaECOM = "28";
+            }else if(diaECOM.equals("29")){
+                diaECOM = "29";
+            }else if(diaECOM.equals("30")){
+                diaECOM = "30";
+            }else if(diaECOM.equals("31")){
+                diaECOM = "31";
+            }
+            
+            String mesECOM = request.getParameter("mesECOM");
+            if(mesECOM.equals("1")){
+                mesECOM = "Enero";
+            }else if(mesECOM.equals("2")){
+                mesECOM = "Febrero";
+            }else if(mesECOM.equals("3")){
+                mesECOM = "Marzo";
+            }else if(mesECOM.equals("4")){
+                mesECOM = "Abril";
+            }else if(mesECOM.equals("5")){
+                mesECOM = "Mayo";
+            }else if(mesECOM.equals("6")){
+                mesECOM = "Junio";
+            }else if(mesECOM.equals("7")){
+                mesECOM = "Julio";
+            }else if(mesECOM.equals("8")){
+                mesECOM = "Agosto";
+            }else if(mesECOM.equals("9")){
+                mesECOM = "Septiembre";
+            }else if(mesECOM.equals("10")){
+                mesECOM = "Octubre";
+            }else if(mesECOM.equals("11")){
+                mesECOM = "Noviembre";
+            }else if(mesECOM.equals("12")){
+                mesECOM = "Diciembre";
+            }
+            
             if(validacionD.equals("1")){
                 //REGISTRAR EXAMEN COMPLEMENTARIO
                 ExamenComplementario examenComplementario = new ExamenComplementario(
                         0,
                         request.getParameter("nombrePA"),
                         request.getParameter("dniPA"),
+                        diaECOM,
+                        mesECOM,
+                        request.getParameter("anioECOM"),
                         ec1,
                         ec2,
                         ec3,
@@ -112,14 +207,18 @@ public class ValidarDonante extends HttpServlet {
                         request.getParameter("dni"),
                         request.getParameter("ocupacion"),
                         request.getParameter("lugarN"),
-                        request.getParameter("fechaN"),
+                        request.getParameter("diaN"),
+                        request.getParameter("mesN"),
+                        request.getParameter("anioN"),
                         Integer.parseInt(request.getParameter("edad")),
                         request.getParameter("distrito"),
                         request.getParameter("domicilio"),
                         request.getParameter("centroT"),
                         Integer.parseInt(request.getParameter("telCasa")),
                         Integer.parseInt(request.getParameter("celular")),
-                        request.getParameter("fechaR"),
+                        request.getParameter("diaR"),
+                        request.getParameter("mesR"),
+                        request.getParameter("anioR"),
                         request.getParameter("sexo"),
                         request.getParameter("estadoC"),
                         request.getParameter("grupoS"),
@@ -134,6 +233,9 @@ public class ValidarDonante extends HttpServlet {
                         0,
                         request.getParameter("nombrePA"),
                         request.getParameter("dniPA"),
+                        diaECOM,
+                        mesECOM,
+                        request.getParameter("anioECOM"),
                         ec1,
                         ec2,
                         ec3,
@@ -154,14 +256,18 @@ public class ValidarDonante extends HttpServlet {
                         request.getParameter("dni"),
                         request.getParameter("ocupacion"),
                         request.getParameter("lugarN"),
-                        request.getParameter("fechaN"),
+                        request.getParameter("diaN"),
+                        request.getParameter("mesN"),
+                        request.getParameter("anioN"),
                         Integer.parseInt(request.getParameter("edad")),
                         request.getParameter("distrito"),
                         request.getParameter("domicilio"),
                         request.getParameter("centroT"),
                         Integer.parseInt(request.getParameter("telCasa")),
                         Integer.parseInt(request.getParameter("celular")),
-                        request.getParameter("fechaR"),
+                        request.getParameter("diaR"),
+                        request.getParameter("mesR"),
+                        request.getParameter("anioR"),
                         request.getParameter("sexo"),
                         request.getParameter("estadoC"),
                         request.getParameter("grupoS"),

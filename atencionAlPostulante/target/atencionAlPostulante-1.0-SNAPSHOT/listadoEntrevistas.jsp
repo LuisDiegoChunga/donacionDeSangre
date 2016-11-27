@@ -42,7 +42,7 @@
                         <td><%= entrevista.getCodEnt() %></td>
                         <td><%= entrevista.getNombreEnt() %></td>
                         <td><%= entrevista.getDniEnt() %></td>
-                        <td><%= entrevista.getDiaEnt() + "/" + entrevista.getMesEnt() + "/"  + entrevista.getAnioEnt() %></td>
+                        <td><%= entrevista.getDiaEnt() + " / " + entrevista.getMesEnt() + " / "  + entrevista.getAnioEnt() %></td>
                         <td>
                             <a href="obtener-entrevista?codEnt=<%= entrevista.getCodEnt() %>"
                                class="btn btn-primary">Ver Entrevista</a>

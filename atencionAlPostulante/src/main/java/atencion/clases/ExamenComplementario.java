@@ -18,6 +18,12 @@ public class ExamenComplementario {
     @Column
     private String dniPA;
     @Column
+    private String diaECOM;
+    @Column
+    private String mesECOM;
+    @Column
+    private String anioECOM;
+    @Column
     private String ec1;
     @Column
     private String ec2;
@@ -41,10 +47,13 @@ public class ExamenComplementario {
     public ExamenComplementario() {
     }
 
-    public ExamenComplementario(long codEC, String nombrePA, String dniPA, String ec1, String ec2, String ec3, String ec4, String ec5, String ec6, String ec7, String ec8, String ec9, String responsable) {
+    public ExamenComplementario(long codEC, String nombrePA, String dniPA, String diaECOM, String mesECOM, String anioECOM, String ec1, String ec2, String ec3, String ec4, String ec5, String ec6, String ec7, String ec8, String ec9, String responsable) {
         this.codEC = codEC;
         this.nombrePA = nombrePA;
         this.dniPA = dniPA;
+        this.diaECOM = diaECOM;
+        this.mesECOM = mesECOM;
+        this.anioECOM = anioECOM;
         this.ec1 = ec1;
         this.ec2 = ec2;
         this.ec3 = ec3;
@@ -79,6 +88,30 @@ public class ExamenComplementario {
 
     public void setDniPA(String dniPA) {
         this.dniPA = dniPA;
+    }
+
+    public String getDiaECOM() {
+        return diaECOM;
+    }
+
+    public void setDiaECOM(String diaECOM) {
+        this.diaECOM = diaECOM;
+    }
+
+    public String getMesECOM() {
+        return mesECOM;
+    }
+
+    public void setMesECOM(String mesECOM) {
+        this.mesECOM = mesECOM;
+    }
+
+    public String getAnioECOM() {
+        return anioECOM;
+    }
+
+    public void setAnioECOM(String anioECOM) {
+        this.anioECOM = anioECOM;
     }
 
     public String getEc1() {
@@ -160,6 +193,7 @@ public class ExamenComplementario {
     public void setResponsable(String responsable) {
         this.responsable = responsable;
     }
+    
     
     
 }

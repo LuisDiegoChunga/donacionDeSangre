@@ -22,7 +22,11 @@ public class DonanteNoApto {
     @Column
     private String lugarN;
     @Column
-    private String fechaN;
+    private String diaN;
+    @Column
+    private String mesN;
+    @Column
+    private String anioN;
     @Column
     private int edad;
     @Column
@@ -36,7 +40,11 @@ public class DonanteNoApto {
     @Column
     private int celular;
     @Column
-    private String fechaR;
+    private String diaR;
+    @Column
+    private String mesR;
+    @Column
+    private String anioR;
     @Column
     private String sexo;
     @Column
@@ -51,20 +59,24 @@ public class DonanteNoApto {
     public DonanteNoApto() {
     }
 
-    public DonanteNoApto(long codDNA, String nombre, String dni, String ocupacion, String lugarN, String fechaN, int edad, String distrito, String domicilio, String centroT, int telCasa, int celular, String fechaR, String sexo, String estadoC, String grupoS, String factorRh, String tipoDon) {
+    public DonanteNoApto(long codDNA, String nombre, String dni, String ocupacion, String lugarN, String diaN, String mesN, String anioN, int edad, String distrito, String domicilio, String centroT, int telCasa, int celular, String diaR, String mesR, String anioR, String sexo, String estadoC, String grupoS, String factorRh, String tipoDon) {
         this.codDNA = codDNA;
         this.nombre = nombre;
         this.dni = dni;
         this.ocupacion = ocupacion;
         this.lugarN = lugarN;
-        this.fechaN = fechaN;
+        this.diaN = diaN;
+        this.mesN = mesN;
+        this.anioN = anioN;
         this.edad = edad;
         this.distrito = distrito;
         this.domicilio = domicilio;
         this.centroT = centroT;
         this.telCasa = telCasa;
         this.celular = celular;
-        this.fechaR = fechaR;
+        this.diaR = diaR;
+        this.mesR = mesR;
+        this.anioR = anioR;
         this.sexo = sexo;
         this.estadoC = estadoC;
         this.grupoS = grupoS;
@@ -112,12 +124,28 @@ public class DonanteNoApto {
         this.lugarN = lugarN;
     }
 
-    public String getFechaN() {
-        return fechaN;
+    public String getDiaN() {
+        return diaN;
     }
 
-    public void setFechaN(String fechaN) {
-        this.fechaN = fechaN;
+    public void setDiaN(String diaN) {
+        this.diaN = diaN;
+    }
+
+    public String getMesN() {
+        return mesN;
+    }
+
+    public void setMesN(String mesN) {
+        this.mesN = mesN;
+    }
+
+    public String getAnioN() {
+        return anioN;
+    }
+
+    public void setAnioN(String anioN) {
+        this.anioN = anioN;
     }
 
     public int getEdad() {
@@ -168,12 +196,28 @@ public class DonanteNoApto {
         this.celular = celular;
     }
 
-    public String getFechaR() {
-        return fechaR;
+    public String getDiaR() {
+        return diaR;
     }
 
-    public void setFechaR(String fechaR) {
-        this.fechaR = fechaR;
+    public void setDiaR(String diaR) {
+        this.diaR = diaR;
+    }
+
+    public String getMesR() {
+        return mesR;
+    }
+
+    public void setMesR(String mesR) {
+        this.mesR = mesR;
+    }
+
+    public String getAnioR() {
+        return anioR;
+    }
+
+    public void setAnioR(String anioR) {
+        this.anioR = anioR;
     }
 
     public String getSexo() {

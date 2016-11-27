@@ -42,7 +42,7 @@
                         <td><%= examenClinico.getCodExaC() %></td>
                         <td><%= examenClinico.getNombrePost() %></td>
                         <td><%= examenClinico.getDniPost() %></td>
-                        <td><%= examenClinico.getDiaEC() + "/" + examenClinico.getMesEC() + "/" + examenClinico.getAnioEC() %></td>
+                        <td><%= examenClinico.getDiaEC() + " / " + examenClinico.getMesEC() + " / " + examenClinico.getAnioEC() %></td>
                         <td>
                             <a href="obtener-examen-clinico?codExaC=<%= examenClinico.getCodExaC() %>"
                                class="btn btn-primary">Ver Examen Clinico</a>
