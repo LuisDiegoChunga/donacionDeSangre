@@ -23,11 +23,7 @@
                                     Listado de Postulantes
                                 </a>
                             </li>
-                            <li>
-                                <a style="color: #ffffff" target="_top" tabindex="0" href="">
-                                    Reportes
-                                </a>
-                            </li>
+                            
                             <li>
                                 <a style="color: #ffffff" target="_top" tabindex="0" href="logout-usuario">
                                     Cerrar Sesion
