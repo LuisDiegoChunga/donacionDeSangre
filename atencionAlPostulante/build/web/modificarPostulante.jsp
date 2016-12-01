@@ -21,7 +21,7 @@
                 <label>DNI:</label>
                 <input style="margin-left: 40px" size="30" type="text" placeholder="Ingrese DNI" 
                        id="dni" name="dni" 
-                       <%= postulante.getDni() %> required/>
+                       value="<%= postulante.getDni() %>" required/>
             </div>
 
             <div class="col-lg-8">
